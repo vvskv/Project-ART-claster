@@ -1,0 +1,586 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+	--color-text: #28220B;
+	--color-green: #669933;
+	--color-haki: #CCCC99;
+	--color-dark-green: #486B24;
+}
+h1, h2, h3 ,h4, a, p {
+	color: var(--color-text);
+}
+a, p {
+	font-family: "Open Sans";
+	font-size: 18px;
+}
+h2 {
+	font-family: 'Montserrat';
+	font-weight: 500;
+}
+p {
+	line-height: 150%;
+}
+body {
+	background: rgba(255, 255, 204, 0.15);
+}
+h1 {
+	font-family: 'Montserrat';	
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 150%;
+	color: var(--color-text);
+}
+
+
+/*---------service class-----------*/
+
+.d-flex {
+	display: flex;
+}
+.flex-sb {
+	justify-content: space-between;
+}
+.align-i-center {
+	align-items: center;
+}
+.flex-column {
+	flex-direction: column;
+}
+.container {
+	max-width: 1210px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+
+
+
+/*-----------fonts-classes----------*/
+.fw-300 {
+	font-weight: 300;
+}
+.fw-400 {
+	font-weight: 400;
+}
+.fw-500 {
+	font-weight: 500;
+}
+.fw-600 {
+	font-weight: 600;
+}
+.fw-700 {
+	font-weight: 700;
+}
+.fw-800 {
+	font-weight: 800;
+}
+
+
+
+
+/*------------margin--------*/
+.margin-top-30 {
+	margin-top: 30px;
+}
+.margin-top-120 {
+	margin-top: 120px;
+}
+.tab {
+	margin-left: 40px;
+}
+
+
+
+/*------------buttons, links, icons----------*/ 
+
+.text-link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	font-weight: 400;
+	font-size: 18px;
+}
+.text-link p {
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.text-link:hover p {
+	border-bottom: 1px solid var(--color-text);
+	transition: border 0.3s;
+}
+
+
+.icon {
+	transition: all 0.4s;
+}
+.icon:hover {
+	transform: scale(1.5);
+}
+
+.main-button {
+	background: #669933;
+	border-radius: 3px;
+	border: none;
+	color: white;
+}
+.main-button:hover {
+	background-color: var(--color-dark-green);
+	transition: background 0.3s;
+	cursor: pointer;
+}
+.main-button--small {
+	width: 140px;
+	height: 35px;
+}
+
+
+
+
+/*------------------Маленький хедер-----------*/
+.small-header {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(204, 153, 204, 0.15) 100%), 
+	url(../images/header-small.jpg);
+}
+
+/*--------фильтр событий-----------*/
+.filter-events {
+	display: flex;
+	justify-content: space-between;
+
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--color-text);
+}
+
+/*-----------Афиша - отдельное событие-------------*/
+.event {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+	max-width: 280px;
+	padding: 5px;
+
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-radius: 3px;
+}
+.event__name {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 110%;
+}
+.event__type {
+	font-weight: 600;
+	font-size: 14px;
+}
+.event__date {
+	font-weight: 600;
+	font-size: 16px;
+}
+.event:hover {
+	border: 3px solid var(--color-green);
+	transition: border 0.4s;
+}
+
+
+
+/*--------------------формы-------------------*/
+
+.form-set {
+	position: relative;
+	width: 280px;
+	padding: 30px;
+
+	background: linear-gradient(180.12deg, #CCCC99 0.1%, rgba(126, 123, 86, 0.4) 88.03%, rgba(40, 34, 11, 0.3) 101.8%);
+	border-radius: 3px;	
+}
+.form-set__icon {
+	background: none;
+	border: none;
+}
+.form-set__icon-close {
+	position: absolute;
+	top: 22px;
+	right: 30px;
+}
+.form-set__wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.form-set__wrap > .main-button {
+	align-self: center;
+}
+.form-set legend {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 18px;
+
+	margin-bottom: 10px;
+}
+.form-set p {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 150%;
+}
+.form-set__field {
+	height: 30px;
+
+	padding-left: 20px;
+
+	background: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 3px;	
+
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 150%;
+	color: var(--color-text);
+}
+.form-set__field:focus {
+	border: 1px solid var(--color-text);
+	transition: border 0.4s;
+	outline: none;
+}
+.form-set__field--comment {
+	height: 120px;
+	resize: none;
+}
+.form-set__field + input[type="date"] {
+	color: rgba(40, 34, 11, 0.6); 
+}
+
+
+/*-------------ГЛАВНАЯ СТРАНИЦА---------------*/
+
+.main-page h2 {
+	font-size: 36px;
+}
+
+
+
+
+/*--------Главная страница - хедер-----------*/
+
+.main-page__header {
+	height: 750px;
+	background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(230, 205, 230, 0.9) 40.54%, rgba(255, 255, 255, 0) 100%, #FFFFFF 100%), url(../images/header-main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 1920px;
+	margin: auto;
+}
+.header-menu {
+	margin-left: 60px;
+	width: 90%;
+}
+.header-menu li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.header-menu li:hover {
+	border-bottom: 1px solid var(--color-text);
+	transition: border 0.3s;
+}
+.main-page__header h1 {
+	font-family: 'Montserrat';
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 180%;
+	align-items: center;
+	text-transform: uppercase;
+	color: rgba(40, 34, 11, 0.84);
+}
+.main-page__header p {
+	font-weight: 600;
+	line-height: 150%;
+}
+
+
+
+
+/*----------Главная страница - афиша событий---------*/ 
+
+.poster__text {
+	width: 46%;
+}
+.poster__events {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+/*	justify-items: stretch;*/
+/*align-items: stretch;*/
+	justify-items: center;
+/*	grid-column-gap: 30px;*/
+	grid-row-gap: 60px;
+}
+
+
+
+
+/*------------Главная страница - блок "О нас"--------------*/
+.about {
+	position: relative;
+	height: 570px;
+}
+.about__img {
+	position: absolute;
+	right: 650px;
+}
+.about__text {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 590px;
+}
+
+/*---------Главная страница - помещения для аренды----------*/
+
+.rents__text {
+	width: 40%;
+}
+.rents__catalog {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+/*	grid-column-gap: 30px;*/
+/*	grid-column-gap: auto;*/
+	justify-items: center;
+}
+.room {
+	max-width: 280px;
+	padding: 5px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-radius: 3px;
+}
+.room p {
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 110%;
+	margin-top: 20px;
+}
+.room:hover {
+	border: 3px solid var(--color-green);
+	transition: border 0.4s;
+	/*outline: 2px solid var(--color-green);
+	outline-offset: 5px;
+	border-radius: 2px;*/
+}
+
+
+
+
+
+
+/*---------------------Главная - футер-------------------------------*/
+
+.footer-with-form {
+	background:  linear-gradient(180deg, rgba(204, 153, 204, 0.3) 0%, 
+		rgba(255, 255, 255, 0.4) 100%), url(../images/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 390px;
+	max-width: 1920px;
+
+	margin: auto;
+
+	font-size: 16px;
+	line-height: 150%;
+}
+.footer-with-form__wrap {
+	position: relative;
+	margin-top: 200px;
+}
+.footer-with-form__text {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+/*	grid-column-gap: 180px;*/
+	grid-column-gap: 15%;
+
+	width: 90%;
+/*	width: 1090px;*/
+	height: 210px;
+	margin: auto;
+	padding-top: 120px;
+}
+
+/*---------Форма подписки на новости в футере----------*/
+
+.mailing {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 150px;
+	width: calc(100% - 20px);
+	background: var(--color-haki);
+	border-radius: 3px;
+}
+.mailing--position {
+	position: absolute;
+	top: -75px;
+}
+.mailing__form {
+	height: 60px;
+/*	width: 880px;*/
+	width: 63%;
+
+	background: rgba(255, 255, 255, 0.5);
+
+	padding-left: 60px;
+	font-size: 20px;
+
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 3px;
+}
+.mailing__button {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 22px;
+	color: #28220B;
+	text-decoration-line: underline;
+	text-transform: uppercase;
+	border: none;
+	background: rgba(255, 255, 204, 0);;
+}
+.mailing__form:focus {
+	outline: none;
+	border: 2px solid var(--color-text);
+	transition: border 0.4s;
+}
+.mailing__button:hover {
+	text-shadow: 0 0 .65px var(--color-text), 0 0 .65px var(--color-text);
+	transition: text-shadow 0.3s;
+	cursor: pointer;
+}
+
+
+/*---Стилизация placeholder в форме подписки на новости------*/
+
+.mailing__form::-webkit-input-placeholder {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: #28220B;
+/*	padding-left: 30px;*/
+}
+.mailing__form::-moz-placeholder {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: #28220B;
+/*	padding-left: 30px;*/
+}
+.mailing__form:-moz-placeholder {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: #28220B;
+/*	padding-left: 30px;*/
+}
+.mailing__form:-ms-input-placeholder {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: #28220B;
+/*	padding-left: 30px;*/
+}
+
+
+
+/*------------Блок с иконками соцсетей----------*/
+.icons-block {
+	display: flex;
+	justify-content: space-between;
+	width: 210px;
+}
+/*-------------Кнопка "вернуться наверх"-------------*/
+.footer__return {
+	position: absolute;
+	left: calc(50% - 15px);
+	bottom: -10px;
+}
+
+
