@@ -143,7 +143,8 @@ h1 {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
+
 
 
 
@@ -268,7 +269,9 @@ h1 {
 	url(../images/header-small.jpg);
 }
 
-
+/* .poster-page .poster__events .event {
+	display: none;
+} */
 
 
 /*--------Фильтр событий-----------*/
@@ -487,6 +490,7 @@ h1 {
 /*	grid-column-gap: 30px;*/
 	grid-row-gap: 60px;
 }
+
 
 
 
