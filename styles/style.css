@@ -213,6 +213,10 @@ h1 {
 	font-weight: 400;
 	font-size: 18px;
 }
+.text-link{
+	text-decoration: none;
+}
+
 .text-link p {
 	border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
