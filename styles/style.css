@@ -709,3 +709,10 @@ h1 {
 .small-menu {
   list-style: none;
 }
+/*Location and visiting rules*/
+.location h2{
+	font-size: 50px;
+}
+.rules h2{
+	font-size: 50px;
+}
