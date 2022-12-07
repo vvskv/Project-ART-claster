@@ -1,345 +1,467 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-        url('../fonts/Montserrat-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-        url('../fonts/OpenSans-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
-        url('../fonts/Montserrat-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('../fonts/Montserrat-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Medium.woff2') format('woff2'),
-        url('../fonts/OpenSans-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Medium.woff2") format("woff2"),
+    url("../fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
-        url('../fonts/OpenSans-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
-        url('../fonts/OpenSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/OpenSans-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
-        url('../fonts/OpenSans-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
-
 
 :root {
-	--color-text: #28220B;
-	--color-green: #669933;
-	--color-haki: #CCCC99;
-	--color-dark-green: #486B24;
+  --color-text: #28220b;
+  --color-green: #669933;
+  --color-haki: #cccc99;
+  --color-dark-green: #486b24;
 }
-h1, h2, h3 ,h4, a, p {
-	color: var(--color-text);
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  color: var(--color-text);
 }
-a, p {
-	font-family: "Open Sans";
-	font-size: 18px;
+a,
+p {
+  font-family: "Open Sans";
+  font-size: 18px;
 }
 h2 {
-	font-family: 'Montserrat';
-	font-weight: 500;
+  font-family: "Montserrat";
+  font-weight: 500;
 }
 p {
-	line-height: 150%;
+  line-height: 150%;
 }
 body {
-	background: rgba(255, 255, 204, 0.15);
+	display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  background: rgba(255, 255, 204, 0.15);
 }
 h1 {
-	font-family: 'Montserrat';	
-	font-weight: 500;
-	font-size: 50px;
-	line-height: 150%;
-	color: var(--color-text);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 150%;
+  color: var(--color-text);
 }
-
 
 /*---------service class-----------*/
 
 .d-flex {
-	display: flex;
+  display: flex;
 }
 .flex-sb {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 .align-i-center {
-	align-items: center;
+  align-items: center;
 }
 .flex-column {
-	flex-direction: column;
+  flex-direction: column;
 }
 .container {
-	max-width: 1210px;
-	margin: auto;
-	padding: 0 10px;
+  max-width: 1210px;
+  margin: auto;
+  padding: 0 10px;
 }
 .visually-hidden {
-    /* класс для удаления чек-бокса */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  /* класс для удаления чек-бокса */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
-
-
 
 /*-----------fonts-classes----------*/
 .fw-300 {
-	font-weight: 300;
+  font-weight: 300;
 }
 .fw-400 {
-	font-weight: 400;
+  font-weight: 400;
 }
 .fw-500 {
-	font-weight: 500;
+  font-weight: 500;
 }
 .fw-600 {
-	font-weight: 600;
+  font-weight: 600;
 }
 .fw-700 {
-	font-weight: 700;
+  font-weight: 700;
 }
 .fw-800 {
-	font-weight: 800;
+  font-weight: 800;
 }
-
-
-
 
 /*------------margin--------*/
 .margin-top-small {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 .margin-top-medium {
-	margin-top: 90px;
+  margin-top: 90px;
 }
 .margin-top-120 {
-	margin-top: 120px;
+  margin-top: 120px;
 }
 .tab {
-	margin-left: 40px;
+  margin-left: 40px;
 }
 .margin-auto {
-	margin: auto;
+  margin: auto;
 }
 .margin-bottom-30 {
-	margin-bottom: -30px;
+  margin-bottom: -30px;
 }
-.margin-top-60{
-	margin-top: 60px;
+.margin-top-60 {
+  margin-top: 60px;
 }
-.margin-top-90{
-	margin-top: 90px;
+.margin-top-90 {
+  margin-top: 90px;
 }
-.margin-top-30{
-	margin-top: 30px;
+.margin-top-30 {
+  margin-top: 30px;
 }
-.margin-top-10{
-	margin-top: 10px;
+.margin-top-10 {
+  margin-top: 10px;
 }
 
-/*------------buttons, links, icons, page selector----------*/ 
+/*------------buttons, links, icons, page selector----------*/
 
 .text-link {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-	font-weight: 400;
-	font-size: 18px;
+  font-weight: 400;
+  font-size: 18px;
 }
-.text-link{
-	text-decoration: none;
+.text-link {
+  text-decoration: none;
 }
 
 .text-link p {
-	border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 .text-link:hover p {
-	border-bottom: 1px solid var(--color-text);
-	transition: border 0.3s;
+  border-bottom: 1px solid var(--color-text);
+  transition: border 0.3s;
 }
-
 
 .icon {
-	transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
 }
 .icon:hover {
-	transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .main-button {
-	background: #669933;
-	border-radius: 3px;
-	border: none;
-	color: white;
+  background: #669933;
+  border-radius: 3px;
+  border: none;
+  color: white;
 }
 .main-button:hover {
-	background-color: var(--color-dark-green);
-	transition: background 0.3s;
-	cursor: pointer;
+  background-color: var(--color-dark-green);
+  transition: background 0.3s;
+  cursor: pointer;
 }
 .main-button--small {
-	width: 140px;
-	height: 35px;
+  width: 140px;
+  height: 35px;
 }
 
 .secondary-button {
-	background: rgba(0, 0, 0, 0);
-	border-radius: 3px;
-	border: 1px solid var(--color-text);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  border: 1px solid var(--color-text);
 
-	width: 140px;
-	height: 35px;
+  width: 140px;
+  height: 35px;
+
+  cursor: pointer;
 }
 .secondary-button:hover {
-	background: #FFFFCC;
+  background: #ffffcc;
 }
+.secondary-button--no-content {
+	opacity: 0.6;
+	cursor: auto;
+  }
+  .secondary-button--no-content:hover {
+	background: none;
+  }
 
-.page-selector {
+/*--------------------формы на всплывающих окнах-------------------*/
+
+.form-set {
+	position: relative;
+	width: 280px;
+	padding: 30px;
+  
+	background: linear-gradient(
+	  180.12deg,
+	  #cccc99 0.1%,
+	  rgba(126, 123, 86, 0.4) 88.03%,
+	  rgba(40, 34, 11, 0.3) 101.8%
+	);
+	border-radius: 3px;
+  }
+  .form-set__icon {
+	background: none;
+	border: none;
+  }
+  .form-set__icon-close {
+	position: absolute;
+	top: 22px;
+	right: 30px;
+  }
+  .form-set__wrap {
 	display: flex;
-	align-items: center;
-}
-.page-selector--right {
-	margin-left: auto;
-}
-.page-selector p {
-	margin-right: 50px;
-}
-.page-selector a {
-	margin-right: 20px;
-}
+	flex-direction: column;
+	gap: 30px;
+  }
+  .form-set__wrap > .main-button {
+	align-self: center;
+  }
+  .form-set legend {
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 18px;
+  
+	margin-bottom: 10px;
+  }
+  .form-set p {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 150%;
+  }
+  .form-set__field {
+	height: 30px;
+  
+	padding-left: 20px;
+  
+	background: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 3px;
+  
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 150%;
+	color: var(--color-text);
+  }
+  .form-set__field:focus {
+	border: 1px solid var(--color-text);
+	transition: border 0.4s;
+	outline: none;
+  }
+  .form-set__field--comment {
+	height: 120px;
+	resize: none;
+  }
+  .form-set__field + input[type="date"] {
+	color: rgba(40, 34, 11, 0.6);
+  }
 
-
-
-/*------------------Маленький хедер-----------*/
+/*------------------ХЕДЕРЫ-----------*/
 .small-header {
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(204, 153, 204, 0.15) 100%), 
-	url(../images/header-small.jpg);
+	background: url(../images/header-small.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	margin: auto;
 }
+/*--------Главная страница - хедер-----------*/
 
-/* .poster-page .poster__events .event {
-	display: none;
-} */
+.main-page__header {
+	height: 750px;
+  background-image: url(../images/header-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  /* max-width: 1920px; */
+  margin: auto;
+  }
+  .header-menu {
+	margin-left: 60px;
+	width: 90%;
+  }
+  .header-menu li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+  }
+  .header-menu li:hover {
+	border-bottom: 1px solid var(--color-text);
+	transition: border 0.3s;
+  }
+  .main-page__header h1 {
+	font-family: "Montserrat";
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 180%;
+	align-items: center;
+	text-transform: uppercase;
+	color: rgba(40, 34, 11, 0.84);
+  }
+  .main-page__header p {
+	font-weight: 600;
+	line-height: 150%;
+  }
 
+/*---------------------ФУТЕРЫ-------------------------------*/
 
-/*--------Фильтр событий-----------*/
-.filter-events {
+.footer {
+	position: relative;
+  background: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  font-size: 16px;
+  line-height: 150%;
+  }
+  
+  .footer--with-form {
+	height: 390px;
+	margin-top: 200px;
+  }
+  .footer--small {
+	display: flow-root;
+	background: url(../images/footer-small.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+  }
+  
+  .footer__wrap {
+	display: flow-root;
+	max-width: 1210px;
+  }
+  
+  .footer__text {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 15%;  
+	width: 90%;
+	height: 210px;
+	margin: auto;
+  }
+  /*------------Блок с иконками соцсетей----------*/
+.icons-block {
 	display: flex;
 	justify-content: space-between;
+	width: 210px;
+  }
+  /*-------------Кнопка "вернуться наверх"-------------*/
+  .footer__return {
+	position: absolute;
+	left: calc(50% - 15px);
+	bottom: 30px;
+  }
 
-	font-family: 'Open Sans';
-	font-weight: 400;
-	font-size: 16px;
-	color: var(--color-text);
-}
-/* Стилизация чекбоксов */
-.filter-events label::before {
-	content: "";
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border: 3px solid var(--color-haki);
-	border-radius: 2px;
-	margin-right: 15px;
-}
 
-.filter-events label {
-	display: inline-flex;
-	align-items: center;
-}
-.filter-events label:hover {
-	cursor: pointer;
-}
-#check-exposition:checked ~ .filter-events [for="check-exposition"]::before,
-#check-training:checked ~ .filter-events [for="check-training"]::before,
-#check-concert:checked ~ .filter-events [for="check-concert"]::before,
-#check-master-class:checked ~ .filter-events [for="check-master-class"]::before,
-#check-sport:checked ~ .filter-events [for="check-sport"]::before,
-#check-lesson:checked ~ .filter-events [for="check-lesson"]::before
- {
-	background: var(--color-haki)
-}
-/* Правила фильтрации */
-[value="exposition"]:checked ~ .poster__events .event:not([data-category~="exposition"]),
-[value="training"]:checked ~ .poster__events .event:not([data-category~="training"]),
-[value="concert"]:checked ~ .poster__events .event:not([data-category~="concert"]),
-[value="master-class"]:checked ~ .poster__events .event:not([data-category~="master-class"]),
-[value="sport"]:checked ~ .poster__events .event:not([data-category~="sport"]),
-[value="lesson"]:checked ~ .poster__events .event:not([data-category~="lesson"])
- {
-	display: none;
+/*-------------ГЛАВНАЯ СТРАНИЦА---------------*/
+
+.main-page h2 {
+  font-size: 36px;
 }
 
 
 
+/*----------Главная страница - афиша событий---------*/
 
-
+.poster__text {
+  width: 46%;
+}
+.poster__events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*	justify-items: stretch;*/
+  /*align-items: stretch;*/
+  justify-items: center;
+  /*	grid-column-gap: 30px;*/
+  grid-row-gap: 60px;
+}
 
 /*-----------Афиша - отдельное событие-------------*/
 .event {
@@ -349,361 +471,241 @@ h1 {
 	align-items: flex-start;
 	max-width: 280px;
 	padding: 5px;
-
+  
 	border: 3px solid rgba(0, 0, 0, 0);
 	border-radius: 3px;
-}
-.event__name {
-	font-family: 'Montserrat';
+  }
+  .event__name {
+	font-family: "Montserrat";
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 110%;
-}
-.event__type {
+  }
+  .event__type {
 	font-weight: 600;
 	font-size: 14px;
-}
-.event__date {
+  }
+  .event__date {
 	font-weight: 600;
 	font-size: 16px;
-}
-.event:hover {
+  }
+  .event:hover {
 	border: 3px solid var(--color-green);
 	transition: border 0.4s;
-}
-
-
-
-/*--------------------формы-------------------*/
-
-.form-set {
-	position: relative;
-	width: 280px;
-	padding: 30px;
-
-	background: linear-gradient(180.12deg, #CCCC99 0.1%, rgba(126, 123, 86, 0.4) 88.03%, rgba(40, 34, 11, 0.3) 101.8%);
-	border-radius: 3px;	
-}
-.form-set__icon {
-	background: none;
-	border: none;
-}
-.form-set__icon-close {
-	position: absolute;
-	top: 22px;
-	right: 30px;
-}
-.form-set__wrap {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-}
-.form-set__wrap > .main-button {
-	align-self: center;
-}
-.form-set legend {
-	font-family: 'Open Sans';
-	font-weight: 600;
-	font-size: 18px;
-
-	margin-bottom: 10px;
-}
-.form-set p {
-	font-family: 'Open Sans';
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 150%;
-}
-.form-set__field {
-	height: 30px;
-
-	padding-left: 20px;
-
-	background: rgba(255, 255, 255, 0.5);
-	border: 1px solid rgba(0, 0, 0, 0);
-	border-radius: 3px;	
-
-	font-family: 'Open Sans';
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 150%;
-	color: var(--color-text);
-}
-.form-set__field:focus {
-	border: 1px solid var(--color-text);
-	transition: border 0.4s;
-	outline: none;
-}
-.form-set__field--comment {
-	height: 120px;
-	resize: none;
-}
-.form-set__field + input[type="date"] {
-	color: rgba(40, 34, 11, 0.6); 
-}
-
-
-/*-------------ГЛАВНАЯ СТРАНИЦА---------------*/
-
-.main-page h2 {
-	font-size: 36px;
-}
-
-
-
-
-/*--------Главная страница - хедер-----------*/
-
-.main-page__header {
-	height: 750px;
-	background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(230, 205, 230, 0.9) 40.54%, rgba(255, 255, 255, 0) 100%, #FFFFFF 100%), url(../images/header-main.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	max-width: 1920px;
-	margin: auto;
-}
-.header-menu {
-	margin-left: 60px;
-	width: 90%;
-}
-.header-menu li {
-	border-bottom: 1px solid rgba(0, 0, 0, 0);
-}
-.header-menu li:hover {
-	border-bottom: 1px solid var(--color-text);
-	transition: border 0.3s;
-}
-.main-page__header h1 {
-	font-family: 'Montserrat';
-	font-size: 50px;
-	font-weight: 700;
-	line-height: 180%;
-	align-items: center;
-	text-transform: uppercase;
-	color: rgba(40, 34, 11, 0.84);
-}
-.main-page__header p {
-	font-weight: 600;
-	line-height: 150%;
-}
-
-
-
-
-/*----------Главная страница - афиша событий---------*/ 
-
-.poster__text {
-	width: 46%;
-}
-.poster__events {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-/*	justify-items: stretch;*/
-/*align-items: stretch;*/
-	justify-items: center;
-/*	grid-column-gap: 30px;*/
-	grid-row-gap: 60px;
-}
-
-
-
-
+  }
+  
 
 /*------------Главная страница - блок "О нас"--------------*/
 .about {
-	position: relative;
-	height: 570px;
+	width: 100%;
+  position: relative;
+  height: 570px;
 }
 .about__img {
-	position: absolute;
-	right: 650px;
+  position: absolute;
+  right: 650px;
 }
 .about__text {
-	position: absolute;
-	right: 0;
-	top: 30px;
-	width: 590px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 590px;
 }
 
 /*---------Главная страница - помещения для аренды----------*/
 
 .rents__text {
-	width: 40%;
+  width: 40%;
 }
 .rents__catalog {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-/*	grid-column-gap: 30px;*/
-/*	grid-column-gap: auto;*/
-	justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 .room {
-	max-width: 280px;
-	padding: 5px;
-	border: 3px solid rgba(0, 0, 0, 0);
-	border-radius: 3px;
+  max-width: 280px;
+  padding: 5px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
 }
 .room p {
-	font-family: 'Montserrat';
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 110%;
-	margin-top: 20px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-top: 20px;
 }
 .room:hover {
-	border: 3px solid var(--color-green);
-	transition: border 0.4s;
-	/*outline: 2px solid var(--color-green);
-	outline-offset: 5px;
-	border-radius: 2px;*/
+  border: 3px solid var(--color-green);
+  transition: border 0.4s;
 }
 
 
-
-
-
-
-/*---------------------Главная - футер-------------------------------*/
-
-.footer-with-form {
-	background:  linear-gradient(180deg, rgba(204, 153, 204, 0.3) 0%, 
-		rgba(255, 255, 255, 0.4) 100%), url(../images/footer.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-
-	height: 390px;
-	max-width: 1920px;
-
-	margin: auto;
-
-	font-size: 16px;
-	line-height: 150%;
-}
-
-.footer-with-form__wrap {
-	position: relative;
-	margin-top: 200px;
-}
-.footer-with-form__text {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-column-gap: 15%;
-
-	width: 90%;
-	height: 210px;
-	margin: auto;
-	padding-top: 120px;
-}
 
 /*---------Форма подписки на новости в футере----------*/
 
-.mailing {
+.footer__mailing {
+	position: absolute;
+	top: -75px;
+	/* left: 335px; */
+  }
+  .mailing {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	height: 150px;
+	max-width: 1210px;
 	width: calc(100% - 20px);
 	background: var(--color-haki);
 	border-radius: 3px;
-}
-.mailing--position {
-	position: absolute;
-	top: -75px;
-}
-.mailing__form {
+  }
+  .mailing__form {
 	height: 60px;
-/*	width: 880px;*/
 	width: 63%;
-
+  
 	background: rgba(255, 255, 255, 0.5);
-
+  
 	padding-left: 60px;
 	font-size: 20px;
-
+  
 	border: 2px solid rgba(0, 0, 0, 0);
 	border-radius: 3px;
-}
-.mailing__button {
-	font-family: 'Open Sans';
+  }
+  .mailing__button {
+	font-family: "Open Sans";
 	font-weight: 400;
 	font-size: 22px;
-	color: #28220B;
+	color: #28220b;
 	text-decoration-line: underline;
 	text-transform: uppercase;
 	border: none;
-	background: rgba(255, 255, 204, 0);;
-}
-.mailing__form:focus {
+	background: rgba(255, 255, 204, 0);
+  }
+  .mailing__form:focus {
 	outline: none;
 	border: 2px solid var(--color-text);
 	transition: border 0.4s;
-}
-.mailing__button:hover {
-	text-shadow: 0 0 .65px var(--color-text), 0 0 .65px var(--color-text);
+  }
+  .mailing__button:hover {
+	text-shadow: 0 0 0.65px var(--color-text), 0 0 0.65px var(--color-text);
 	transition: text-shadow 0.3s;
 	cursor: pointer;
-}
-
-
-/*---Стилизация placeholder в форме подписки на новости------*/
-
-.mailing__form::-webkit-input-placeholder {
-	font-family: 'Open Sans';
+  }
+  
+  /*---Стилизация placeholder в форме подписки на новости------*/
+  
+  .mailing__form::-webkit-input-placeholder {
+	font-family: "Open Sans";
 	font-weight: 400;
 	font-size: 16px;
-	color: #28220B;
-/*	padding-left: 30px;*/
-}
-.mailing__form::-moz-placeholder {
-	font-family: 'Open Sans';
+	color: #28220b;
+  }
+  .mailing__form::-moz-placeholder {
+	font-family: "Open Sans";
 	font-weight: 400;
 	font-size: 16px;
-	color: #28220B;
-/*	padding-left: 30px;*/
-}
-.mailing__form:-moz-placeholder {
-	font-family: 'Open Sans';
+	color: #28220b;
+  }
+  .mailing__form:-moz-placeholder {
+	font-family: "Open Sans";
 	font-weight: 400;
 	font-size: 16px;
-	color: #28220B;
-/*	padding-left: 30px;*/
-}
-.mailing__form:-ms-input-placeholder {
-	font-family: 'Open Sans';
+	color: #28220b;
+  }
+  .mailing__form:-ms-input-placeholder {
+	font-family: "Open Sans";
 	font-weight: 400;
 	font-size: 16px;
-	color: #28220B;
-/*	padding-left: 30px;*/
-}
+	color: #28220b;
+  }
 
 
+/* ----------Страница с событиями POSTER-PAGE------- */
 
-/*------------Блок с иконками соцсетей----------*/
-.icons-block {
-	display: flex;
-	justify-content: space-between;
-	width: 210px;
-}
-/*-------------Кнопка "вернуться наверх"-------------*/
-.footer__return {
-	position: absolute;
-	left: calc(50% - 15px);
-	bottom: -10px;
-}
+#events-warehouse {
+	display: none;
+  }
+  
+  .poster .secondary-button {
+	margin: 30px auto 0px auto;
+  }
+
+/*--------Фильтр событий-----------*/
+.filter-events {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-row-gap: 20px;  
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--color-text);
+  }
+  
+  /* Стилизация чекбоксов */
+  
+  .filter-events label::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid var(--color-haki);
+	border-radius: 2px;
+	margin-right: 15px;
+  }
+  
+  .filter-events label {
+	display: inline-flex;
+	align-items: center;
+  }
+  .filter-events label:hover {
+	cursor: pointer;
+  }
+  #check-all:checked ~ .filter-events [for="check-all"]::before,
+  #check-exposition:checked ~ .filter-events [for="check-exposition"]::before,
+  #check-training:checked ~ .filter-events [for="check-training"]::before,
+  #check-concert:checked ~ .filter-events [for="check-concert"]::before,
+  #check-master-class:checked ~ .filter-events [for="check-master-class"]::before,
+  #check-sport:checked ~ .filter-events [for="check-sport"]::before,
+  #check-lesson:checked ~ .filter-events [for="check-lesson"]::before {
+	background: var(--color-haki);
+  }
+  
+  /* Правила фильтрации */
+  
+  [value="exposition"]:checked
+	~ .poster__events
+	.event:not([data-category~="exposition"]),
+  [value="training"]:checked
+	~ .poster__events
+	.event:not([data-category~="training"]),
+  [value="concert"]:checked
+	~ .poster__events
+	.event:not([data-category~="concert"]),
+  [value="master-class"]:checked
+	~ .poster__events
+	.event:not([data-category~="master-class"]),
+  [value="sport"]:checked ~ .poster__events .event:not([data-category~="sport"]),
+  [value="lesson"]:checked
+	~ .poster__events
+	.event:not([data-category~="lesson"]) {
+	display: none;
+  }
+
 
 /*--Contacts--*/
-.bold{
-	font-weight: bold;
+
+.bold {
+  font-weight: bold;
 }
-.contacts-list{
-	display: grid;
-	grid-template-columns: 600px 600px;
-	grid-template-rows: 90px 90px;
-	gap: 30px;
-} 
-.header-menu a{
-	text-decoration: none;
+.contacts-list {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 90px 90px;
+  gap: 30px;
 }
-.small-menu{
-	list-style: none;
+.header-menu a {
+  text-decoration: none;
+}
+.small-menu {
+  list-style: none;
 }
