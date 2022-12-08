@@ -769,3 +769,54 @@ h1 {
 .rents__items{
   margin-bottom: 120px;
 }
+.width-rents{
+  width: 15px;
+}
+/*Recreation page*/
+.recreation-top h2{
+  font-size: 50px;
+}
+.recreation__items{
+  display: grid;
+  grid-template-columns:590px 590px;
+  grid-gap: 30px;
+}
+.margin-top-60{
+  margin-top: 60px;
+}
+.recreation{
+  margin-bottom: 90px;
+}
+.renting-button{
+  background: #669933;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  width: 140px;
+height: 35px;
+cursor: pointer;
+}
+.renting-button:hover {
+  background-color: var(--color-dark-green);
+}
+.renting-button--no-content {
+opacity: 0.6;
+cursor: auto;
+}
+.renting-button--no-content:hover {
+background: none;
+}
+
+.space{
+  width: 330px;
+  font-size: 18px;
+}
+.price{
+  font-size: 22px;
+}
+.recreation-about-top{
+  font-size: 20px;
+}
+.recreation-about-middle{
+font-size: 18px;
+}
