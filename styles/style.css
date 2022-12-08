@@ -743,3 +743,29 @@ h1 {
 .offers{
   margin-bottom: 180px;
 }
+
+
+/*renting*/
+.rents__items{
+  display: grid;
+  grid-template-columns: 280px 280px 280px 280px;
+  grid-template-rows: 390px 390px 390px 390px;
+  grid-gap: 60px 30px;
+
+}
+.rents__title{
+  font-size: 20px;
+}
+.rents__p{
+  font-size: 16px;
+}
+.rents_h2{
+  font-weight: 500;
+  font-size: 50px;;
+}
+.margin-top-25{
+  margin-top: 25px;
+}
+.rents__items{
+  margin-bottom: 120px;
+}
