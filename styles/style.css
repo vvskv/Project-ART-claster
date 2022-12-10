@@ -791,6 +791,13 @@ h1 {
 .width-rents{
   width: 15px;
 }
+.rent__space{
+  width: 200px;
+  font-size: 16px;
+}
+.rent__space-big{
+  width:220px;
+}
 /*Recreation page*/
 .recreation-top h2{
   font-size: 50px;
