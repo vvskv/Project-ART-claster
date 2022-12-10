@@ -773,14 +773,17 @@ h1 {
 
 }
 .rents__title{
-  font-size: 20px;
+  font-size: 24px;
 }
 .rents__p{
   font-size: 16px;
+  line-height: 22px;
+ 
+  
 }
 .rents_h2{
   font-weight: 500;
-  font-size: 50px;;
+  font-size: 50px;
 }
 .margin-top-25{
   margin-top: 25px;
@@ -790,6 +793,14 @@ h1 {
 }
 .width-rents{
   width: 15px;
+}
+.rent_space{
+  width: 215px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.rent_space-big{
+width: 250px;
 }
 /*Recreation page*/
 .recreation-top h2{
