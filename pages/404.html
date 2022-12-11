@@ -9,33 +9,45 @@
     <link rel="stylesheet" href="../styles/media.css" />
   </head>
 
-  <body>
-
+  <body class="page-404">
     <header class="small-header">
       <div class="container d-flex flex-sb align-i-center">
         <a href="../index.html">
-          <img src="images/logo.svg" alt="" />
+          <img src="../images/logo.svg" alt="" />
         </a>
         <!-- основное меню -->
         <nav class="header-menu">
           <ul class="d-flex flex-sb fw-600">
-            <li><a href="">О нас</a></li>
-            <li><a href="">События</a></li>
-            <li><a href="">Арендаторам</a></li>
-            <li><a href="">Товары и услуги</a></li>
-            <li><a href="">Посетителям</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="about-us.html">О нас</a></li>
+            <li><a href="event-main-page.html">События</a></li>
+            <li><a href="rent-main-page.html">Арендаторам</a></li>
+            <li><a href="goods-services.html">Товары и услуги</a></li>
+            <li><a href="info-for-visitors.html">Посетителям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="container"></section>
-    </main>
+    <section class="container margin-top-90">
+      <span class="page-404__number-404">404</span>
+      <h1 class="page-404__title">К сожалению, этой страницы нет</h1>
+      <p class="page-404__text">
+        Зато у нас много интересных событий,<br />
+        которые вы можете посетить
+      </p>
+      <div class="page-404__links">
+        <a href="pages/poster-page.html" class="underline-link">
+          <p class="fw-600">Смотреть все события</p>
+        </a>
+        <a href="pages/poster-page.html" class="underline-link">
+          <p>Сообщить о нерабочей ссылке</p>
+        </a>
+      </div>
+    </section>
 
-    <footer class="footer footer--small">
-      <div class="container margin-top-small">
+    <footer class="footer footer--small margin-top-120">
+      <div class="container margin-top-30">
         <!-- текст в футере -->
 
         <div class="footer__text">
@@ -61,16 +73,16 @@
               <p>kanart@art.ru</p>
               <div class="icons-block">
                 <a href="" class="icon"
-                  ><img src="images/icon-find.svg" alt=""
+                  ><img src="../images/icon-find.svg" alt=""
                 /></a>
                 <a href="" class="icon"
-                  ><img src="images/icon-tele.svg" alt=""
+                  ><img src="../images/icon-tele.svg" alt=""
                 /></a>
                 <a href="" class="icon"
-                  ><img src="images/icon-ytube.svg" alt=""
+                  ><img src="../images/icon-ytube.svg" alt=""
                 /></a>
                 <a href="" class="icon"
-                  ><img src="images/icon-vk.svg" alt=""
+                  ><img src="../images/icon-vk.svg" alt=""
                 /></a>
               </div>
             </div>
@@ -78,14 +90,14 @@
         </div>
 
         <img
-          src="images/arrow-up.svg"
+          src="../images/arrow-up.svg"
           alt=""
           class="icon footer__return"
           onclick="returnOnTop()"
         />
       </div>
     </footer>
-    <script src="scripts/jquery-3.6.1.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="../scripts/jquery-3.6.1.js"></script>
+    <script src="../scripts/app.js"></script>
   </body>
 </html>

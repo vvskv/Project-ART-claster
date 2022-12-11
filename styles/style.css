@@ -116,7 +116,6 @@ h1 {
   font-weight: 500;
   font-size: 50px;
   line-height: 150%;
-  color: var(--color-text);
 }
 
 /*---------service class-----------*/
@@ -171,6 +170,7 @@ h1 {
 .fw-800 {
   font-weight: 800;
 }
+
 
 /*------------margin--------*/
 .margin-top-small {
@@ -227,6 +227,15 @@ h1 {
 .text-link:hover p {
   border-bottom: 1px solid var(--color-text);
   transition: border 0.3s;
+}
+.underline-link {
+  text-decoration: underline;
+  transition: all 0.4s linear;
+
+}
+.underline-link:hover {
+  transform: scale(1.1);
+
 }
 
 .icon {
@@ -291,6 +300,11 @@ h1 {
   }
   .renting-button--no-content:hover {
   background: none;
+  }
+  .link-and-h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
 /*--------------------формы на всплывающих окнах-------------------*/
@@ -716,53 +730,94 @@ h1 {
 
 /*--Contacts--*/
 
-.bold {
-  font-weight: bold;
-}
-.contacts-list {
+.contacts-page-info {
   display: grid;
-  grid-template-columns: 600px 600px;
-  grid-template-rows: 90px 90px;
+  grid-template-columns: 590px 590px;
+}
+.contacts-page-info h2 {
+  font-family: 'Open Sans';
+font-weight: 600;
+font-size: 24px;
+}
+.contacts-page-info p, a {
+  font-weight: 400;
+font-size: 20px;
+line-height: 200%;
+}
+.contacts-page-info a {
+  text-decoration: underline;
+}
+.contacts-page-info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.contacts-page-info__item--gap45 {
+  gap: 45px;
+}
+.contacts-page-info__item--gap30 {
   gap: 30px;
 }
-.header-menu a {
-  text-decoration: none;
-}
-.small-menu {
-  list-style: none;
-}
-/*Location and visiting rules*/
-.location h2{
-	font-size: 50px;
-}
-.rules h2{
-	font-size: 50px;
-}
-/*Goods and services*/
-.offers__items{
-  display: grid;
-  grid-template-columns: 280px 280px 280px 280px;
-  grid-template-rows: 390px 390px 390px 390px;
-  gap: 60px;
 
-}
-.items__title{
+/*Location and visiting rules*/
+.for-visitors-page-content {
+  font-family: 'Open Sans';
+  font-weight: 400;
   font-size: 20px;
 }
-.offers__items p{
-  font-size: 16px;
-}
-.offers h2{
+.for-visitors-page-content h2 {
   font-size: 50px;
-  margin-bottom: 60px;
 }
-.items-decoration{
- text-decoration-line: underline;
+.for-visitors-page-content__item {
+  display: grid;
+  grid-template-columns: repeat(2, 590px);
+  column-gap: 30px;  
 }
-.offers{
-  margin-bottom: 180px;
+.for-visitors-page-content__item h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 22px;
+}
+.for-visitors-page-content__rules {
+  display: grid;
+  grid-template-columns: repeat(2, 590px);
+  column-gap: 30px;
+  row-gap: 60px;
 }
 
+/*----Товары и услуги----*/
+
+.offers-page-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 60px;
+}
+.offers-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 590px;
+}
+.offers-item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.offers-item__text p {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+.offers-item__text h2 {
+  font-family: 'Montserrat';
+font-weight: 500;
+font-size: 20px;
+}
+.offers-item__text a {
+  font-weight: 600;
+  font-size: 16px;
+}
 
 /*renting*/
 .rents__items{
@@ -845,4 +900,47 @@ font-size: 18px;
 }
 .rent-about-middle{
 font-size: 18px;
+}
+
+/* page 404 */
+.page-404__number-404 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+font-size: 128px;
+color: #999999;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.page-404__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin-top: 60px;
+}
+.page-404__title {
+font-size: 36px;
+margin-top: 40px;
+}
+.page-404__text {
+  font-weight: 400;
+font-size: 26px;
+margin-top: 30px;
+}
+/* ----------about us page---------- */
+.about-page-info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.about-page-info__item{
+  display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.about-page-info__item p {
+  max-width: 590px;
+}
+.about-page-info__item img {
+  width: 100%;
+  height: 100%;
 }
