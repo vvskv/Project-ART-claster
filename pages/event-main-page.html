@@ -32,18 +32,20 @@
     <!-- -------------секция с событиями------------ -->
 
     <section
-      class="poster margin-top-medium container d-flex flex-column margin-bottom-30"
+      class="events-page margin-top-90 container d-flex flex-column margin-bottom-30"
     >
-      <a
-        href=""
-        class="text-link"
-        onclick="javascript:history.back(); return false;"
-      >
-        <img src="../images/left-arrow.svg" alt="" />
-        <p>Вернуться назад</p>
-      </a>
+      <div class="link-and-h1">
+        <a
+          href=""
+          class="text-link"
+          onclick="javascript:history.back(); return false;"
+        >
+          <img src="../images/left-arrow.svg" alt="" />
+          <p>Вернуться назад</p>
+        </a>
 
-      <h1 class="margin-top-small">События</h1>
+        <h1>События</h1>
+      </div>
 
       <!-- -------фильтры--------- -->
 
@@ -98,7 +100,7 @@
         value="lesson"
       />
 
-      <div class="filter-events margin-top-small">
+      <div class="filter-events margin-top-30">
         <label for="check-all">Все события</label>
         <label for="check-exposition">Выставки</label>
         <label for="check-training">Тренинги</label>
@@ -110,39 +112,39 @@
 
       <!-- --------------блок событий--------- -->
 
-      <div class="poster__events margin-top-small" id="events-show">
-        <a href="" class="event" data-category="exposition">
+      <div class="events-page-content margin-top-30" id="events-show">
+        <a href="event-1.html" class="event" data-category="exposition">
           <img src="../images/ev-1-prev.jpg" alt="" />
           <h3 class="event__name">Алиша Эггерт «Ты (на) остров(е)»</h3>
           <p class="event__type">Выставка</p>
           <p class="event__date">12 февраля - 12 марта</p>
         </a>
-        <a href="" class="event" data-category="master-class">
+        <a href="event-2.html" class="event" data-category="master-class">
           <img src="../images/ev-2-prev.jpg" alt="" />
           <h3 class="event__name">Мастер-класс для детей с Асей Заславской</h3>
           <p class="event__type">Мастер-класс</p>
           <p class="event__date">18 февраля</p>
         </a>
 
-        <a href="" class="event" data-category="exposition">
+        <a href="event-3.html" class="event" data-category="exposition">
           <img src="../images/ev-3-prev.jpg" alt="" />
           <h3 class="event__name">Выставка работ Алексея Яковлева</h3>
           <p class="event__type">Выставка</p>
           <p class="event__date">12 февраля - 12 марта</p>
         </a>
-        <a href="" class="event" data-category="exposition">
+        <a href="event-4.html" class="event" data-category="exposition">
           <img src="../images/ev-4-prev.jpg" alt="" />
           <h3 class="event__name">Выставка “Отвергнутые шедевры”</h3>
           <p class="event__type">Выставка</p>
           <p class="event__date">12 февраля - 12 марта</p>
         </a>
-        <a href="" class="event" data-category="exposition">
+        <a href="event-5.html" class="event" data-category="exposition">
           <img src="../images/ev-5-prev.jpg" alt="" />
           <h3 class="event__name">Выставка В.В. Богаткина. Акварель.</h3>
           <p class="event__type">Выставка</p>
           <p class="event__date">12 февраля - 12 марта</p>
         </a>
-        <a href="" class="event" data-category="lesson">
+        <a href="event-6.html" class="event" data-category="lesson">
           <img src="../images/ev-6-prev.jpg" alt="" />
           <h3 class="event__name">
             Экскурсия -головоломка о Петре-I от Данилы Петрова.
@@ -150,13 +152,13 @@
           <p class="event__type">Лекция</p>
           <p class="event__date">12 марта</p>
         </a>
-        <a href="" class="event" data-category="exposition">
+        <a href="event-7.html" class="event" data-category="exposition">
           <img src="../images/ev-7-prev.jpg" alt="" />
           <h3 class="event__name">Путешествие в виртуальные галереи</h3>
           <p class="event__type">Выставка</p>
           <p class="event__date">12 февраля - 12 марта</p>
         </a>
-        <a href="" class="event" data-category="exposition">
+        <a href="event-8.html" class="event" data-category="exposition">
           <img src="../images/ev-8-prev.jpg" alt="" />
           <h3 class="event__name">Александр Савинов. Миражи</h3>
           <p class="event__type">Выставка</p>
@@ -167,20 +169,20 @@
       <!-- блок, где хранятся скрытые события -->
 
       <div id="events-warehouse">
-        <a href="" class="event" data-category="exposition">
+        <a href="event-9.html" class="event" data-category="exposition">
           <img src="../images/ev-9-prev.jpg" alt="" />
           <h3 class="event__name">Выставка крестьянского быта</h3>
           <p class="event__type">Выставка</p>
           <p class="event__date">12 февраля - 12 марта</p>
         </a>
-        <a href="" class="event" data-category="exposition">
+        <a href="event-10.html" class="event" data-category="exposition">
           <img src="../images/ev-10-prev.jpg" alt="" />
           <h3 class="event__name">“Зеркала и зазеркалье”</h3>
           <p class="event__type">Выставка</p>
           <p class="event__date">18 февраля - 19 марта</p>
         </a>
 
-        <a href="" class="event" data-category="concert">
+        <a href="event-11.html" class="event" data-category="concert">
           <img src="../images/ev-11-prev.jpg" alt="" />
           <h3 class="event__name">Роман Петров с программой “Под гитару”</h3>
           <p class="event__type">Концерт</p>

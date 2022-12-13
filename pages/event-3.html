@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/media.css" />
+  </head>
+
+  <body>
+    <header class="small-header">
+      <div class="container d-flex flex-sb align-i-center">
+        <a href="../index.html">
+          <img src="../images/logo.svg" alt="" />
+        </a>
+        <!-- основное меню -->
+        <nav class="header-menu">
+          <ul class="d-flex flex-sb fw-600">
+            <li><a href="about-us.html">О нас</a></li>
+            <li><a href="event-main-page.html">События</a></li>
+            <li><a href="rent-main-page.html">Арендаторам</a></li>
+            <li><a href="goods-services.html">Товары и услуги</a></li>
+            <li><a href="info-for-visitors.html">Посетителям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container event-page margin-top-90">
+      <a
+        href=""
+        class="text-link"
+        onclick="javascript:history.back(); return false;"
+      >
+        <img src="../images/left-arrow.svg" alt="" />
+        <p>Вернуться назад</p>
+      </a>
+
+      <h1 class="event-page__title">Выставка работ Алексея Яковлева</h1>
+
+      <img class="event-page__img" src="../images/ev-3-poster.jpg" alt="" />
+
+      <div class="event-page__main-info">
+        <p>Выставка</p>
+        <p class="event-page__date">19 февраля - 19 марта</p>
+        <p class="event-page__price">500 Р</p>
+        <!-- <button class="main-button main-button--big">Купить билет</button> -->
+        <a
+          href="#id-open-buy-ticket"
+          class="main-button main-button--big"
+          onclick="showBuyTicketWindow()"
+          >Купить билет</a
+        >
+      </div>
+
+      <div class="event-page__text">
+        <p>
+          Галерея «Треугольник» рада представить "Безмолвие", двойную
+          персональную выставку братьев Антона и Алексея Яковлевых (род. в 1982
+          году, живут и работают в Калининграде). Это вторая выставка художников
+          в галерее. Во время исторических сломов даже привычные вещи обретают
+          новый смысл. Медиа транслируют образы катастрофы, глаза и пальцы тут и
+          там упираются в плоские экраны. Сегодня мы осознаём некоторые свойства
+          живописи с радостью нового открытия: единичность, уникальность, особое
+          тепло материала. Холст и масло сохраняют для нас каждое касание живого
+          художника. «Традиционный» медиум, востребованный рынком, оказывается
+          наиболее человечным.Братья художники Антон и Алексей Яковлевы
+          исследуют это гуманное измерение искусства и приглашают нас с собой.
+          Главное место в их работе занимают портреты, на которых изображена вся
+          фигура, как правило, сидящего человека, пойманного пространством, а
+          может, стиснутого им.
+        </p>
+        <p>
+          Даже когда человек отсутствует, пространство и предметы, как будто,
+          нуждаются в нём – будь то незанятый стул в интерьере или ваза с
+          цветком, увиденная обитателем комнаты.Алексей и Антон, каждый со
+          своими особенностями, работают в одном стиле, близком к живописи
+          позднего модернизма. Наша эпоха метамодерна – новый виток популярности
+          фигуративного искусства. Сам стиль играет ключевую роль: модернистская
+          «неправильность», свобода художника от академической строгости - не
+          новость, но способ выразить современную уязвимость человеческого
+          существа. Это «неправильность», с которой несимметричны наши тела и
+          лица. Нестандартность, делающая каждого из нас уникальным.
+        </p>
+      </div>
+    </section>
+
+    <div id="id-open-buy-ticket" class="buy-ticket"></div>
+
+    <footer class="footer footer--small margin-top-90">
+      <div class="container margin-top-30">
+        <!-- текст в футере -->
+
+        <div class="footer__text">
+          <div class="d-flex flex-column flex-sb">
+            <p class="fw-600">
+              Центр современного искусства КанArt открыт для посещения ежедневно
+            </p>
+            <p>
+              понедельник - четверг 9.00 - 22.00 <br />
+              пятница - воскресенье 9.00 - 23.00
+            </p>
+            <p>© Оформление сайта. ООО «Рога и копыта», 2002</p>
+          </div>
+
+          <div class="d-flex flex-column flex-sb">
+            <p>г. Нижний Новгород, ул. Академика Сахарова 40/1</p>
+            <p>
+              Администрация: +7 (959) 756 32 23 <br />
+              Аренда: +7 (959) 913 56 74 <br />
+              Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)
+            </p>
+            <div class="d-flex flex-sb">
+              <p>kanart@art.ru</p>
+              <div class="icons-block">
+                <a href="" class="icon"
+                  ><img src="../images/icon-find.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-tele.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-ytube.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-vk.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="../images/arrow-up.svg"
+          alt=""
+          class="icon footer__return"
+          onclick="returnOnTop()"
+        />
+      </div>
+    </footer>
+    <script src="../scripts/jquery-3.6.1.js"></script>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
