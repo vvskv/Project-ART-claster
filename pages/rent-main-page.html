@@ -1,262 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/media.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/media.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="small-header">
-		
-		<div class="container d-flex flex-sb align-i-center">
-			<a href="index.html">
-				<img src="images/logo.svg" alt="">
-			</a>
-			<!-- Маленькое меню -->
-			<nav class="header-menu">	
-				<ul class=" small-menu d-flex flex-sb fw-600">
-					<li><a href="">О нас</a></li>
-					<li><a href="">События</a></li>
-					<li><a href="">Арендаторам</a></li>
-					<li><a href="">Товары и услуги</a></li>
-					<li><a href="">Посетителям</a></li>
-					<li><a href="">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>	
+      <div class="container d-flex flex-sb align-i-center">
+        <a href="../index.html">
+          <img src="../images/logo.svg" alt="" />
+        </a>
+        <!-- Маленькое меню -->
+        <nav class="header-menu">
+          <ul class="small-menu d-flex flex-sb fw-600">
+            <li><a href="about-us.html">О нас</a></li>
+            <li><a href="event-main-page.html">События</a></li>
+            <li><a href="rent-main-page.html">Арендаторам</a></li>
+            <li><a href="goods-services.html">Товары и услуги</a></li>
+            <li><a href="info-for-visitors.html">Посетителям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-	</header>
-    <section class="poster margin-top-medium container d-flex flex-column margin-bottom-30 rents_h2" >
-    <a href="" class="text-link">
-      <img src="images/arrow-left.svg" alt="" />
-      <p>Вернуться назад</p>
-    </a>
+    <main class="container margin-top-90">
+      <div class="link-and-h1">
+        <a
+          href=""
+          class="text-link"
+          onclick="javascript:history.back(); return false;"
+        >
+          <img src="../images/left-arrow.svg" alt="" />
+          <p>Вернуться назад</p>
+        </a>
+        <h1>Помещения для аренды</h1>
+      </div>
 
-    <h2 class="margin-top-small ">Помещения для аренды</h2>
-
-    <!-- -------фильтры--------- -->
-
-    <input
-      type="radio"
-      name="filter-events"
-      class="visually-hidden"
-      id="check-all"
-      value="all"
-      checked
-    />
-    <input
-      type="radio"
-      name="filter-events"
-      class="visually-hidden"
-      id="check-exposition"
-      value="exposition"
-    />
-    <input
-      type="radio"
-      name="filter-events"
-      class="visually-hidden"
-      id="check-training"
-      value="training"
-    />
-    <input
-      type="radio"
-      name="filter-events"
-      class="visually-hidden"
-      id="check-concert"
-      value="concert"
-    />
-    <input
-      type="radio"
-      name="filter-events"
-      class="visually-hidden"
-      id="check-master-class"
-      value="master-class"
-    />
-    <input
-      type="radio"
-      name="filter-events"
-      class="visually-hidden"
-      id="check-sport"
-      value="sport"
-    />
-    <input
-      type="radio"
-      name="filter-events"
-      class="visually-hidden"
-      id="check-lesson"
-      value="lesson"
-    />
-
-    <div class="filter-events margin-top-small">
-      
-      <label for="check-exposition">Выставки</label>
-      <label for="check-training">Тренинги</label>
-      <label for="check-concert">Коцерты</label>
-      <label for="check-master-class">Мастер-классы</label>
-      <label for="check-sport">Спортивные</label>
-      <label for="check-lesson">Лекции</label>
-    </div>
-    </section>
-    <section class="rents__items container">
-        <div>
-            <img src="images/rent1.png">
-        </div>
-        <div>
-           <p class="rents__title fw-600">Рекреация</p>
-           <div class=" rent__space d-flex flex-sb margin-top-25">
-            <div><p>212 м2</p></div>
-            <div><p>до 180 человек</p></div>
-        </div>
-         
-           
-            <p class="rents__p  fw-400 margin-top-25">Тренинги<br>Лекции<br>Мастер-классы</p>
-           <p class="rents__p fw-600 margin-top-25">от 3500 Р в час</p>
-            <button class="secondary-button margin-top-25">Арендовать</button>
-        </div>
-        <div>
-            <img src="images/rent2.png">
-        </div>
-        <div>
-            <p class="rents__title fw-600">Офис в стиле лофт</p>
-            <div class=" rent__space d-flex flex-sb margin-top-25">
-                <div><p>120 м2</p></div>
-                <div><p>до 50 человек</p></div>
+      <div class="rent-page-content margin-top-60">
+        <div class="rent-page-content__item">
+          <a href="room-recreation.html">
+            <img src="../images/room-2-prev.jpg" />
+          </a>
+          <div class="rent-page-content__item-text">
+            <h2>Рекреация</h2>
+            <div class="rent-page-content__item-text-param">
+              <p>212 м2</p>
+              <p>до 180 человек</p>
             </div>
-            
-            <p class="rents__p  fw-400 margin-top-25">Тренинги<br>Мастер-классы<br>Выставки<br>Лекции<br></p>
-            <p class="rents__p fw-600 margin-top-25">от 8500 Р в час</p>
-            <button class="secondary-button margin-top-25">Арендовать</button>
-        </div>
-        <div>
-            <img src="images/rent3.png">
-        </div>
-        <div>
-            <p class="rents__title fw-600">Помещение для неформальных встреч</p>
-            <div class=" rent__space d-flex flex-sb margin-top-25">
-                <div><p>38 м2</p></div>
-                <div><p>до 22 человек</p></div>
-            </div>
-         
-            <p class="rents__p  fw-400 margin-top-25">Тренинги<br>Лекции<br>Мастер-классы</p>
-            <p class="rents__p fw-600 margin-top-25">от 2500 Р в час</p>
-            <button class="secondary-button margin-top-25">Арендовать</button>
-
-        </div>
-        <div>
-            <img src="images/offer4.png">
-        </div>
-        <div>
-            <p class="rents__title fw-600">Лекторий библиотеки</p>
-            <div class=" rent__space d-flex flex-sb margin-top-25">
-                <div><p>61 м2</p></div>
-                <div><p>до 40 человек</p></div>
-            </div>
-            
-            <p class="rents__p fw-400 margin-top-25">Тренинги<br>Лекции<br>Выставки</p>
-            <p class="rents__p fw-600 margin-top-25">от 9500 Р в час</p>
-            <button class="secondary-button margin-top-25">Арендовать</button>
-        </div>
-        <div>
-            <img src="images/offer5.png">
-        </div>
-        <div>
-            <p class="rents__title fw-600">Двор</p>
-            <div class=" rent__space-big d-flex flex-sb margin-top-25">
-                <div><p>2018 м2</p></div>
-                <div><p>до 1350 человек</p></div>
-            </div>
-            
-            <p class="rents__p fw-400 margin-top-25">Тренинги<br> Спортивные<br> мастер-классы<br>Концерты</p>
-            <p class="rents__p fw-600 margin-top-25">от 7500 Р в час</p>
-            <button class="secondary-button margin-top-25">Арендовать</button>
-        </div>
-        <div>
-            <img src="images/offer6.png">
-        </div>
-        <div>
-            <p class="rents__title fw-600">Веранда</p>
-            <div class=" rent__space d-flex flex-sb margin-top-25">
-                <div><p>513 м2</p></div>
-                <div><p>до 350 человек</p></div>
-            </div>
-            
-           
-            <p class="rents__p fw-400 margin-top-25">Тренинги<br>Мастер-классы</p>
-            <p class="rents__p fw-600 margin-top-25">от 5000 Р в час</p>
-            <button class="secondary-button margin-top-25">Арендовать</button>
-        </div>
-        <div>
-            <img src="images/rent7.png">
-        </div>
-        <div>
-            <p class="rents__title fw-600">Большой зал</p>
-            <div class=" rent__space-big d-flex flex-sb margin-top-25">
-                <div><p>1000 м2</p></div>
-                <div><p>до 800 человек</p></div>
-            </div>
-           
-
-            <p class="rents__p  fw-400 margin-top-25">Тренинги<br>Мастер-классы <br>Концерты<br>Лекции<br>Выставки</p>
-            <p class="rents__p fw-600 margin-top-25">от 10500 Р в час</p>
-            <button class="secondary-button margin-top-25">Арендовать</button>
+            <ol>
+              <li>Тренинги</li>
+              <li>Лекции</li>
+              <li>Мастер-классы</li>
+            </ol>
+            <p class="fw-600">от 3500 Р в час</p>
+            <a href="room-recreation.html" class="secondary-button"
+              >Подробнее</a
+            >
+          </div>
         </div>
 
-       
-    </section>
-    <footer class="footer footer--small">
-		<div class="container margin-top-small">
-		  <!-- текст в футере -->
-  
-		  <div class="footer__text">
-			<div class="d-flex flex-column flex-sb">
-			  <p class="fw-600">
-				Центр современного искусства КанArt открыт для посещения ежедневно
-			  </p>
-			  <p>
-				понедельник - четверг 9.00 - 22.00 <br />
-				пятница - воскресенье 9.00 - 23.00
-			  </p>
-			  <p>© Оформление сайта. ООО «Рога и копыта», 2002</p>
-			</div>
-  
-			<div class="d-flex flex-column flex-sb">
-			  <p>г. Нижний Новгород, ул. Академика Сахарова 40/1</p>
-			  <p>
-				Администрация: +7 (959) 756 32 23 <br />
-				Аренда: +7 (959) 913 56 74 <br />
-				Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)
-			  </p>
-			  <div class="d-flex flex-sb">
-				<p>kanart@art.ru</p>
-				<div class="icons-block">
-				  <a href="" class="icon"
-					><img src="images/icon-find.svg" alt=""
-				  /></a>
-				  <a href="" class="icon"
-					><img src="images/icon-tele.svg" alt=""
-				  /></a>
-				  <a href="" class="icon"
-					><img src="images/icon-ytube.svg" alt=""
-				  /></a>
-				  <a href="" class="icon"
-					><img src="images/icon-vk.svg" alt=""
-				  /></a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-  
-		  <img
-			src="images/arrow-up.svg"
-			alt=""
-			class="icon footer__return"
-			onclick="returnOnTop()"
-		  />
-		</div>
-	  </footer>
-</body>
+        <div class="rent-page-content__item">
+          <a href="room-loft-office.html">
+            <img src="../images/room-1-prev.jpg" />
+          </a>
+          <div class="rent-page-content__item-text">
+            <h2>Офис в стиле лофт</h2>
+            <div class="rent-page-content__item-text-param">
+              <p>120 м2</p>
+              <p>до 50 человек</p>
+            </div>
+            <ol>
+              <li>Тренинги</li>
+              <li>Лекции</li>
+              <li>Мастер-классы</li>
+              <li>Выставки</li>
+            </ol>
+            <p class="fw-600">от 8500 Р в час</p>
+            <a href="room-loft-office.html" class="secondary-button"
+              >Подробнее</a
+            >
+          </div>
+        </div>
+
+        <div class="rent-page-content__item">
+          <a href="room-informal-meeting.html">
+            <img src="../images/room-3-prev.jpg" />
+          </a>
+          <div class="rent-page-content__item-text">
+            <h2>Помещение для неформальных встреч</h2>
+            <div class="rent-page-content__item-text-param">
+              <p>38 м2</p>
+              <p>до 22 человек</p>
+            </div>
+            <ol>
+              <li>Тренинги</li>
+              <li>Лекции</li>
+              <li>Мастер-классы</li>
+            </ol>
+            <p class="fw-600">от 2500 Р в час</p>
+            <a href="room-informal-meeting.html" class="secondary-button"
+              >Подробнее</a
+            >
+          </div>
+        </div>
+
+        <div class="rent-page-content__item">
+          <a href="room-library.html">
+            <img src="../images/room-4-prev.jpg" />
+          </a>
+          <div class="rent-page-content__item-text">
+            <h2>Лекторий библиотеки</h2>
+            <div class="rent-page-content__item-text-param">
+              <p>61 м2</p>
+              <p>до 40 человек</p>
+            </div>
+            <ol>
+              <li>Тренинги</li>
+              <li>Лекции</li>
+              <li>Выставки</li>
+            </ol>
+            <p class="fw-600">от 9500 Р в час</p>
+            <a href="room-library.html" class="secondary-button">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="rent-page-content__item">
+          <a href="room-yard.html">
+            <img src="../images/room-5-prev.jpg" />
+          </a>
+          <div class="rent-page-content__item-text">
+            <h2>Двор</h2>
+            <div class="rent-page-content__item-text-param">
+              <p>2018 м2</p>
+              <p>до 1350 человек</p>
+            </div>
+            <ol>
+              <li>Тренинги</li>
+              <li>Концерты</li>
+              <li>Выставки</li>
+              <li>Спортивные</li>
+            </ol>
+            <p class="fw-600">от 7500 Р в час</p>
+            <a href="room-yard.html" class="secondary-button">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="rent-page-content__item">
+          <a href="room-veranda.html">
+            <img src="../images/room-6-prev.jpg" />
+          </a>
+          <div class="rent-page-content__item-text">
+            <h2>Веранда</h2>
+            <div class="rent-page-content__item-text-param">
+              <p>513 м2</p>
+              <p>до 350 человек</p>
+            </div>
+            <ol>
+              <li>Тренинги</li>
+              <li>Мастер-классы</li>
+            </ol>
+            <p class="fw-600">от 5000 Р в час</p>
+            <a href="room-veranda.html" class="secondary-button">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="rent-page-content__item">
+          <a href="room-big-hall.html">
+            <img src="../images/room-7-prev.jpg" />
+          </a>
+          <div class="rent-page-content__item-text">
+            <h2>Большой зал</h2>
+            <div class="rent-page-content__item-text-param">
+              <p>1000 м2</p>
+              <p>до 800 человек</p>
+            </div>
+            <ol>
+              <li>Тренинги</li>
+              <li>Мастер-классы</li>
+              <li>Концерты</li>
+              <li>Лекции</li>
+              <li>Выставки</li>
+            </ol>
+            <p class="fw-600">от 10500 Р в час</p>
+            <a href="room-big-hall.html" class="secondary-button">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer footer--small margin-top-90">
+      <div class="container margin-top-30">
+        <!-- текст в футере -->
+
+        <div class="footer__text">
+          <div class="d-flex flex-column flex-sb">
+            <p class="fw-600">
+              Центр современного искусства КанArt открыт для посещения ежедневно
+            </p>
+            <p>
+              понедельник - четверг 9.00 - 22.00 <br />
+              пятница - воскресенье 9.00 - 23.00
+            </p>
+            <p>© Оформление сайта. ООО «Рога и копыта», 2002</p>
+          </div>
+
+          <div class="d-flex flex-column flex-sb">
+            <p>г. Нижний Новгород, ул. Академика Сахарова 40/1</p>
+            <p>
+              Администрация: +7 (959) 756 32 23 <br />
+              Аренда: +7 (959) 913 56 74 <br />
+              Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)
+            </p>
+            <div class="d-flex flex-sb">
+              <p>kanart@art.ru</p>
+              <div class="icons-block">
+                <a href="" class="icon"
+                  ><img src="../images/icon-find.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-tele.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-ytube.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-vk.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="../images/arrow-up.svg"
+          alt=""
+          class="icon footer__return"
+          onclick="returnOnTop()"
+        />
+      </div>
+    </footer>
+
+    <script src="../scripts/jquery-3.6.1.js"></script>
+    <script src="../scripts/app.js"></script>
+  </body>
 </html>

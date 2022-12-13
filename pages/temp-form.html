@@ -110,5 +110,54 @@
         </fieldset>
       </form>
     </div>
+
+    <div class="form-set ticket-form modal__wrap">
+      <form action="">
+        <fieldset class="form-set__wrap">
+          <a
+            href=""
+            class="icon form-set__icon-return"
+            onclick="javascript:history.back(); return false;"
+          >
+            <img src="../images/left-arrow.svg" alt="" />
+          </a>
+          <div class="icon form-set__icon-close close-modal">
+            <img src="../images/icon-close.svg" alt="" />
+          </div>
+          <!-- <button class="icon form-set__icon-close" onclick="closeModal()">
+             <img src="../images/icon-close.svg" alt="" />
+           </button> -->
+          <!-- <a href="" class="icon form-set__icon-close" onclick="closeModal()">
+            <img src="../images/icon-close.svg" alt="" />
+          </a> -->
+
+          <legend class="ticket-form__event-name"></legend>
+          <p class="ticket-form__event-date"></p>
+          <input class="form-set__field" type="text" placeholder="Имя" />
+          <input class="form-set__field" type="text" placeholder="Фамилия" />
+          <input class="form-set__field" type="tel" placeholder="Телефон" />
+          <input
+            class="form-set__field"
+            type="email"
+            placeholder="Электронная почта"
+          />
+          <div class="d-flex flex-sb align-i-center">
+            <div class="ticket-form__counter">
+              <button id="id-ticket-dec">-</button>
+              <p id="id-ticket-count">1</p>
+              <button id="id-ticket-inc">+</button>
+            </div>
+            <span class="ticket-form__price">
+              <span id="id-ticket-price"></span> р</span
+            >
+          </div>
+          <p>
+            * Нажимая кнопку “Купить”, я даю согласие на обработку
+            <span class="fw-600">персональных данных.</span>
+          </p>
+          <button class="main-button main-button--small">Купить</button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>

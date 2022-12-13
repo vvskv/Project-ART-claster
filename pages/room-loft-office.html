@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/media.css" />
     <title>Document</title>
   </head>
+
   <body>
     <header class="small-header">
       <div class="container d-flex flex-sb align-i-center">
@@ -30,53 +30,40 @@
       </div>
     </header>
 
-    <!--Страница "Контакты"-->
-    <section class="container margin-top-90 contacts-page-info">
-      <div>
-        <div class="link-and-h1">
-          <a
-            href=""
-            class="text-link"
-            onclick="javascript:history.back(); return false;"
-          >
-            <img src="../images/left-arrow.svg" alt="" />
-            <p>Вернуться назад</p>
-          </a>
-          <h1>Контакты</h1>
-        </div>
-
-        <div
-          class="contacts-page-info__item contacts-page-info__item--gap45 margin-top-60"
+    <main class="container margin-top-90">
+      <div class="link-and-h1">
+        <a
+          href=""
+          class="text-link"
+          onclick="javascript:history.back(); return false;"
         >
-          <div>
-            <h2>Центр современного искусства КанArt</h2>
-            <p class="margin-top-30">
-              г. Нижний Новгород, ул. Академика Сахарова 40/1
-            </p>
-          </div>
-          <div>
-            <h2>Время работы</h2>
-            <p class="margin-top-30">
-              понедельник - четверг 9.00 - 22.00<br />
-              пятница - воскресенье 9.00 - 23.00
-            </p>
-          </div>
-          <p>
-            Администрация: <span class="fw-600">+7 (959) 756 32 23</span><br />
-            Аренда: <span class="fw-600">+7 (959) 913 56 74</span><br />
-            Кассы: <span class="fw-600">+7 (988) 875 12 56</span> (с 9.00 до
-            21.00)
-          </p>
-        </div>
+          <img src="../images/left-arrow.svg" alt="" />
+          <p>Вернуться назад</p>
+        </a>
+        <h1>Офис в стиле лофт</h1>
       </div>
 
-      <div class="contacts-page-info__item contacts-page-info__item--gap30">
-        <p>Почта: <a href>kanart@art.ru</a></p>
-        <p>Телеграм: <a href>t.me/kanart</a></p>
-        <p>YouTube: <a href>www.youtube.com/kanart</a></p>
-        <p>ВКонтакте: <a href>www.vk.com/kanart </a></p>
+      <div class="room-pages-content margin-top-30">
+        <img src="../images/room-loft.jpg" />
+        <div class="room-pages-content__text">
+          <p class="fw-600">
+            Светлый зал на третьем этаже , позволяющий проводить деловые
+            мероприятия высокого уровня.
+          </p>
+          <p>
+            Особенности:<br />
+            • Окна затонированы полупрозрачной матовой пленкой;<br />
+            • 3 туалетные комнаты в непосредственной близости.
+          </p>
+          <div class="room-pages-content__text-param">
+            <p>Площадь 120 м2</p>
+            <p>до 50 человек</p>
+          </div>
+          <p class="fw-600">от 8500 Р в час</p>
+          <button class="main-button main-button--big">Арендовать</button>
+        </div>
       </div>
-    </section>
+    </main>
 
     <footer class="footer footer--small margin-top-90">
       <div class="container margin-top-30">
@@ -129,6 +116,7 @@
         />
       </div>
     </footer>
+
     <script src="../scripts/jquery-3.6.1.js"></script>
     <script src="../scripts/app.js"></script>
   </body>

@@ -2,23 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Document</title>
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/media.css" />
-    <title>Document</title>
   </head>
+
   <body>
     <header class="small-header">
       <div class="container d-flex flex-sb align-i-center">
         <a href="../index.html">
           <img src="../images/logo.svg" alt="" />
         </a>
-        <!-- Маленькое меню -->
+        <!-- основное меню -->
         <nav class="header-menu">
-          <ul class="small-menu d-flex flex-sb fw-600">
+          <ul class="d-flex flex-sb fw-600">
             <li><a href="about-us.html">О нас</a></li>
             <li><a href="event-main-page.html">События</a></li>
             <li><a href="rent-main-page.html">Арендаторам</a></li>
@@ -30,53 +29,50 @@
       </div>
     </header>
 
-    <!--Страница "Контакты"-->
-    <section class="container margin-top-90 contacts-page-info">
-      <div>
-        <div class="link-and-h1">
-          <a
-            href=""
-            class="text-link"
-            onclick="javascript:history.back(); return false;"
-          >
-            <img src="../images/left-arrow.svg" alt="" />
-            <p>Вернуться назад</p>
-          </a>
-          <h1>Контакты</h1>
-        </div>
+    <section class="container event-page margin-top-90">
+      <a
+        href=""
+        class="text-link"
+        onclick="javascript:history.back(); return false;"
+      >
+        <img src="../images/left-arrow.svg" alt="" />
+        <p>Вернуться назад</p>
+      </a>
 
-        <div
-          class="contacts-page-info__item contacts-page-info__item--gap45 margin-top-60"
+      <h1 class="event-page__title">
+        Экскурсия -головоломка о Петре-I от Данилы Петрова.
+      </h1>
+
+      <img class="event-page__img" src="../images/ev-6-poster.jpg" alt="" />
+
+      <div class="event-page__main-info">
+        <p>Лекция</p>
+        <p class="event-page__date">19 марта</p>
+        <p class="event-page__price">500 Р</p>
+        <!-- <button class="main-button main-button--big">Купить билет</button> -->
+        <a
+          href="#id-open-buy-ticket"
+          class="main-button main-button--big"
+          onclick="showBuyTicketWindow()"
+          >Купить билет</a
         >
-          <div>
-            <h2>Центр современного искусства КанArt</h2>
-            <p class="margin-top-30">
-              г. Нижний Новгород, ул. Академика Сахарова 40/1
-            </p>
-          </div>
-          <div>
-            <h2>Время работы</h2>
-            <p class="margin-top-30">
-              понедельник - четверг 9.00 - 22.00<br />
-              пятница - воскресенье 9.00 - 23.00
-            </p>
-          </div>
-          <p>
-            Администрация: <span class="fw-600">+7 (959) 756 32 23</span><br />
-            Аренда: <span class="fw-600">+7 (959) 913 56 74</span><br />
-            Кассы: <span class="fw-600">+7 (988) 875 12 56</span> (с 9.00 до
-            21.00)
-          </p>
-        </div>
       </div>
 
-      <div class="contacts-page-info__item contacts-page-info__item--gap30">
-        <p>Почта: <a href>kanart@art.ru</a></p>
-        <p>Телеграм: <a href>t.me/kanart</a></p>
-        <p>YouTube: <a href>www.youtube.com/kanart</a></p>
-        <p>ВКонтакте: <a href>www.vk.com/kanart </a></p>
+      <div class="event-page__text">
+        <p>
+          История северной столицы и судьба её создателя тесно переплетены между
+          собой. На экскурсии вы узнаете всё об эпохе Петра и его любимом
+          детище. Сколько тысяч людей погибли при строительстве?
+        </p>
+        <p>
+          Почему император не дал городу своё имя и по какому подобию он
+          возводил его? Я помогу разобраться в характере человека, подарившего
+          нам прекрасный Петербург.
+        </p>
       </div>
     </section>
+
+    <div id="id-open-buy-ticket" class="buy-ticket"></div>
 
     <footer class="footer footer--small margin-top-90">
       <div class="container margin-top-30">
