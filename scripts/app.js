@@ -38,68 +38,46 @@ function returnOnTop() {
 
 
 
-// цена одного билета
-let eventPrice = parseInt($(".event-page__price").text());
+// Добавление формы покупки билетов, заполнение формы информацией со страницы
 
-// Счетчик количества билетов
-$( document ).ready(function() {
-  let ticketInc = $("#id-ticket-inc");
-  let ticketDec = $("#id-ticket-dec");
+$(document).ready( ()=> {
+  $(".modal__buy-ticket").load("form-buy-ticket.html", ()=> {
 
-  let showPrice = $("#id-ticket-price");
-  const price = eventPrice;
+    // Цена одного билета
+    const eventPrice = parseInt($(".event-page__price").text());
 
-  let sum = price;
-  
+    // Заполнение формы
+    $(".ticket-form__event-name").html($(".event-page__title").text());
+    $(".ticket-form__event-date").html($(".event-page__date").text());
+    $("#id-ticket-price").html(eventPrice);  
+    
+    const showPrice = $("#id-ticket-price");
+    const currentTicket = $("#id-ticket-count");
 
-  let currentTicket = $("#id-ticket-count");
-  let count = 1;
+    let sum = eventPrice;    
+    let count = 1;
 
-  ticketInc.on('click', function(e) {
-    e.preventDefault();
-    count++;
-    currentTicket.html(count);
-    sum = price * count;
-    showPrice.html(sum);
-   });
+    // кнопка увеличения количества билетов
+    $("#id-ticket-inc").click( ()=> {
+      count++;
+      currentTicket.html(count);
+      sum = eventPrice * count;
+      showPrice.html(sum);
+      return false;
+    });
 
-  ticketDec.on('click', function(e) {
-    e.preventDefault();
-    if (count > 1) {
-      count--;
-    currentTicket.html(count);
-    sum = sum - price;
-    showPrice.html(sum);
-    }    
-   });
-});
-
-
-
-
-// заполнение формы информацией со страницы
-
-$(document).ready(function() {
-  let nameInForm = $(".ticket-form__event-name");
-  let dateInForm = $(".ticket-form__event-date");
-  let priceInForm = $("#id-ticket-price");
-  let eventName = $(".event-page__title").text();
-  let eventDate = $(".event-page__date").text();
-  
-  // let button = $("#id-open-ticket-form");
-
-  
-    // e.preventDefault();
-    nameInForm.html(eventName);
-    dateInForm.html(eventDate);
-    priceInForm.html(eventPrice);
-   
-});
-
-// кнопка закрыть модальное окно
-
-$(document).ready(function($) {
-  $('.open-modal').click(function() {
+    // кнопка уменьшения количества билетов
+    $("#id-ticket-dec").click((e)=> {
+      e.preventDefault();
+      if(count>1) {
+        count--;
+        currentTicket.html(count);
+        sum-=eventPrice;
+        showPrice.html(sum);
+      }
+    }); 
+    // Открытие и закрытие модального окна
+  $('.open-modal').click(function() {    
     $('.modal').fadeIn();
     return false;
   }); 
@@ -117,19 +95,40 @@ $(document).ready(function($) {
   });
   
   $('.modal').click(function(e) {
-    if ($(e.target).closest('.modal-wrap').length == 0) {
+    if ($(e.target).closest('.modal__wrap').length == 0) {
       $(this).fadeOut();          
     }
   });
-});
-// function closeModal() {
-//   // e.preventDefault();
-//   let modal = $(".modal");
-//   modal.fadeOut();
-//   return false;
-// }
-// function openModal() {
-//   let modal = $(".modal");
-//   modal.fadeIn();
-//   return false;
-// }
+  
+  });
+})
+
+
+$(document).ready( ()=> {
+  $(".modal-rent").load("form-rent.html", ()=> {
+
+    $('.open-modal').click(function() {    
+    $('.modal').fadeIn();
+    return false;
+  }); 
+  
+  $('.close-modal').click(function() {
+    $(this).parents('.modal').fadeOut();
+    return false;
+  });   
+ 
+  $(document).keydown(function(e) {
+    if (e.keyCode === 27) {
+      e.stopPropagation();
+      $('.modal').fadeOut();
+    }
+  });
+  
+  $('.modal').click(function(e) {
+    if ($(e.target).closest('.modal__wrap').length == 0) {
+      $(this).fadeOut();          
+    }
+  });
+
+  });
+})
