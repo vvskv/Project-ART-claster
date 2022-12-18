@@ -6,17 +6,27 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/hamburgers.css">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/media.css" />
+    
   </head>
   
   <body class="main-page">
+    
+
+    
     <header class="main-page__header">
       <div class="container d-flex flex-sb align-i-center">
         <a href="index.html">
           <img src="images/logo.svg" alt="" />
         </a>
         <!-- основное меню -->
+        <button class="hamburger hamburger--squeeze header__toggle" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <nav class="header-menu">
           <ul class="d-flex flex-sb fw-600">
             <li><a href="pages/about-us.html">О нас</a></li>
@@ -28,7 +38,7 @@
           </ul>
         </nav>
       </div>
-      <div class="container margin-top-30">
+      <div class="container margin-top-30 header-text">
         <h1>Арт-пространство современного <br />искусства “КанArt”</h1>
         <p class="margin-top-30">
           Часы работы<br />
@@ -43,11 +53,14 @@
       </div>
     </header>
 
-    <!-- -------------секция с событиями------------ -->
+    
 
     <section class="poster margin-top-120 container">
-      <div class="d-flex flex-sb align-i-center">
-        <h2>События в КанArt</h2>
+      <div class="d-flex flex-sb align-i-center poster__title">
+        <a href="pages/event-main-page.html">
+          <h2 >События в КанArt</h2>
+        </a>
+        
         <a href="pages/event-main-page.html" class="text-link">
           <p>Смотреть все события</p>
           <img src="images/right-arrow.svg" alt="" />
@@ -114,8 +127,8 @@
       </div>
     </section>
 
-    <!-- секция о нас -->
-    <section class="about container margin-top-120">
+  
+    <!-- <section class="about container margin-top-120">
       <img class="about__img" src="images/about-img.jpg" alt="" />
       <div class="about__text">
         <h2>О центре</h2>
@@ -138,10 +151,10 @@
           <span class="tab">• городские и федеральные события</span>
         </p>
       </div>
-    </section>
+    </section> -->
 
-    <!-- секция с помещениями для аренды -->
-    <section class="rents container margin-top-120">
+    
+    <!-- <section class="rents container margin-top-120">
       <div class="d-flex flex-sb align-i-center">
         <h2>Аренда помещений</h2>
         <a href="pages/rent-main-page.html" class="text-link">
@@ -172,10 +185,12 @@
           <p>Лекторий библиотеки</p>
         </a>
       </div>
-    </section>
+    </section> -->
 
-    <footer class="footer footer--with-form">
-      <!-- форма для подписки на рассылку событий -->
+ 
+
+    <!-- <footer class="footer footer--with-form">
+      
       <div class="container">
         <form action="" method="post" class="mailing footer__mailing">
           <input
@@ -188,7 +203,7 @@
       </div>
 
       <div class="container footer__wrap margin-top-120">
-        <!-- текст в футере -->
+        >
 
         <div class="footer__text">
           <div class="d-flex flex-column flex-sb">
@@ -236,7 +251,7 @@
           onclick="returnOnTop()"
         />
       </div>
-    </footer>
+    </footer> -->
     <script src="scripts/jquery-3.6.1.js"></script>
     <script src="scripts/app.js"></script>
   </body>

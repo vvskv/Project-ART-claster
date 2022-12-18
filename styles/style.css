@@ -108,10 +108,23 @@ p,
 li {
   line-height: 150%;
 }
+
+
+html {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
 body {
-	display: grid;
-  grid-template-rows: auto 1fr auto;
   min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+body {
+	/* display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%; */
   background: rgba(255, 255, 204, 0.15);
 }
 h1 {
@@ -206,7 +219,7 @@ button:focus ,a:focus {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 200px;
+  /* width: 200px; */
 
   font-weight: 400;
   font-size: 18px;
@@ -314,6 +327,15 @@ button:focus ,a:focus {
     gap: 30px;
   }
 
+  .hamburger {
+    display: none;
+  }
+  .hamburger-inner, .hamburger-inner::before,  .hamburger-inner::after {
+    background-color: var(--color-text);
+  }
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: var(--color-text);
+  }
 /*--------------------формы на всплывающих окнах-------------------*/
 
 .form-set {
@@ -449,7 +471,6 @@ font-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  /* max-width: 1920px; */
   margin: auto;
   }
   .header-menu {
@@ -586,9 +607,9 @@ font-size: 18px;
 
 /*------------Главная страница - блок "О нас"--------------*/
 .about {
-	width: 100%;
   position: relative;
   height: 570px;
+  width: 90%;
 }
 .about__img {
   position: absolute;
@@ -598,7 +619,8 @@ font-size: 18px;
   position: absolute;
   right: 0;
   top: 30px;
-  width: 590px;
+  /* width: 590px; */
+  width: 48%;
 }
 
 /*---------Главная страница - помещения для аренды----------*/
@@ -976,6 +998,8 @@ margin-top: 30px;
 }
 .event-page__img {
   border-radius: 3px;
+  height: 660px;
+  object-fit: cover;
 }
 .event-page__main-info {
   display: flex;

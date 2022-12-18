@@ -1,3 +1,8 @@
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click' , ()=> {
+  // this.classList.toggle('is-active');
+  hamburger.classList.toggle('is-active');
+})
 
 // Кнопка "Показать еще" на странице событий
 function showMore() {
