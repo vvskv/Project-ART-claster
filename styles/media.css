@@ -1,20 +1,328 @@
+:root {
+  --color-text: #28220b;
+  --color-green: #669933;
+  --color-haki: #cccc99;
+  --color-dark-green: #486b24;
+}
 @media screen and (max-width: 1250px) {
-	.poster__events {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	.rents__catalog {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	.header-menu a{
-		font-size: 16px;
-	}
+  .events-page-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .header-menu a {
+    font-size: 16px;
+  }
+  .rent-page-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 960px) {
-	.poster__events {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.rents__catalog {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  .events-page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  header h1 {
+    display: none;
+  }
+  .header-text p {
+    font-size: 14px;
+  }
+  .header-menu ul {
+    flex-direction: column;
+  }
+  .header-menu a {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .main-page__header {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .main-page__header > .d-flex {
+    align-items: flex-start;
+  }
+  .header__toggle.is-active + .header-menu {
+    display: block;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    right: 15px;
+    top: 60px;
+    border-radius: 3px;
+  }
+  .header-menu li:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    background: none;
+  }
+  .header-menu a {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 60px;
+    padding-left: 75px;
+    background: linear-gradient(274.95deg, #ffffcc -31.44%, #cccc99 91.9%);
+    margin-bottom: 6px;
+    border-radius: 3px;
+  }
+  .header-menu a:hover,
+  .header-menu a:focus,
+  .header-menu a:active {
+    background: linear-gradient(274.95deg, #ffffcc -31.44%, #669933 91.9%);
+    transition: background 0.2s;
+  }
+  .about__img {
+    display: none;
+  }
+  /*	Страница "О нас"*/
+  .about-page-info {
+    gap: 15px;
+  }
+  .about-page-info__item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .for-visitors-page-content__item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .tab {
+    margin-left: 10px;
+  }
+  .big-logo {
+    display: none;
+  }
+  .small-logo {
+    display: block;
+  }
+  .small-header {
+    padding-bottom: 10px;
+  }
+  .main-page h2 {
+    font-size: 22px;
+  }
+  .margin-top-120 {
+    margin-top: 60px;
+  }
+  .margin-top-90 {
+    margin-top: 30px;
+  }
+  .margin-top-60 {
+    margin-top: 20px;
+  }
+  .link-and-h1 > .text-link {
+    display: none;
+  }
+  .margin-top-30 {
+    margin-top: 15px;
+  }
+  .event {
+    max-width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    border: 3px solid rgba(204, 204, 153, 0.5);
+  }
+  .event img {
+    max-width: 40%;
+    object-fit: cover;
+  }
+  .event-text h3 {
+    font-size: 16px;
+  }
+  .event-text p {
+    font-size: 14px;
+  }
+  .poster__events {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .poster__text {
+    width: auto;
+  }
+  .poster__title > .text-link {
+    display: none;
+  }
+  .poster__title {
+    width: 90%;
+  }
+  .about {
+    height: auto;
+  }
+  .about__text {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: auto;
+  }
+  .rents__catalog {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .rents__title > .text-link {
+    display: none;
+  }
+  .rents__text {
+    width: auto;
+  }
+  .room p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .room img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+  }
+  .mailing {
+    flex-direction: column;
+  }
+  .mailing__form {
+    width: 90%;
+    padding-left: 10px;
+  }
+  .mailing__form::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  .mailing__form:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+  }
+  .mailing__form::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+  }
+  .mailing__form:-ms-input-placeholder {
+    text-align: center;
+  }
+  .mailing__button {
+    font-size: 18px;
+  }
+  .footer--with-form {
+    margin-top: 100px;
+  }
+  .footer__wrap {
+    margin-top: 100px;
+  }
+  .footer__text {
+    grid-template-columns: 1fr;
+  }
+  .footer__text a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .footer__text-shedule {
+    display: none;
+  }
+
+  .footer__text p {
+    font-size: 14px;
+  }
+  .icons-block {
+    width: 50%;
+  }
+  /*	Страница "События"*/
+  .events-page-content {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .filter-events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .margin-bottom-30 {
+    margin-bottom: 0;
+  }
+  /* Страница Помещения */
+  .rent-page-content {
+    gap: 20px;
+  }
+  .rent-page-content__item {
+    border: 3px solid rgba(204, 204, 153, 0.5);
+    padding: 5px;
+    column-gap: 15px;
+  }
+  .rent-page-content__item-text > .secondary-button {
+    display: none;
+  }
+  .rent-page-content__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .rent-page-content__item h2 {
+    font-size: 16px;
+  }
+  .rent-page-content__item-text li,
+  .rent-page-content__item-text p {
+    font-size: 14px;
+  }
+  .rent-page-content__item-text {
+    gap: 10px;
+  }
+  .rent-page-content__item-text-param {
+    flex-direction: column;
+    gap: 5px;
+  }
+  /* Страница "Посетителям" */
+  .for-visitors-page-content h2 {
+    font-size: 28px;
+  }
+  .for-visitors-page-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .for-visitors-page-content__item {
+    row-gap: 30px;
+  }
+
+  .contacts-page-info {
+    grid-template-columns: 1fr;
+  }
+  .contacts-page-info__item h2 {
+    font-size: 20px;
+  }
+  .contacts-page-info p,
+  a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  h1 {
+    font-size: 24px;
+  }
+  .event-text h3 {
+    font-size: 15px;
+  }
+  .event-text p {
+    font-size: 13px;
+  }
+  .tab {
+    margin-left: 5px;
+  }
+  .header-menu a {
+    width: 200px;
+    height: 60px;
+    padding-left: 45px;
+  }
+  .rent-page-content__item h2 {
+    font-size: 15px;
+  }
+  .rent-page-content__item-text li,
+  .rent-page-content__item-text p {
+    font-size: 13px;
+  }
 }

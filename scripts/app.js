@@ -1,3 +1,13 @@
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click' , ()=> {
+  hamburger.classList.toggle('is-active');
+})
+
+const bigLogo = document.querySelector('.big-logo');
+const formPlaceholder = document.querySelector('.mailing__form');
+if (getComputedStyle(bigLogo).display === 'none') {
+  formPlaceholder.placeholder = 'Введите ваш e-mail';
+}
 
 // Кнопка "Показать еще" на странице событий
 function showMore() {

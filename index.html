@@ -4,31 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/hamburgers.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/media.css" />
   </head>
-  
+
   <body class="main-page">
     <header class="main-page__header">
       <div class="container d-flex flex-sb align-i-center">
         <a href="index.html">
-          <img src="images/logo.svg" alt="" />
+          <img src="images/logo.svg" class="big-logo" alt="" />
+          <img src="images/logo-small.svg" class="small-logo" alt="" />
         </a>
         <!-- основное меню -->
+        <button
+          class="hamburger hamburger--squeeze header__toggle"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <nav class="header-menu">
           <ul class="d-flex flex-sb fw-600">
             <li><a href="pages/about-us.html">О нас</a></li>
             <li><a href="pages/event-main-page.html">События</a></li>
             <li><a href="pages/rent-main-page.html">Арендаторам</a></li>
             <li><a href="pages/goods-services.html">Товары и услуги</a></li>
-            <li><a href="pages/location-visiting-rules.html">Посетителям</a></li>
+            <li>
+              <a href="pages/info-for-visitors.html">Посетителям</a>
+            </li>
             <li><a href="pages/contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
-      <div class="container margin-top-30">
+      <div class="container margin-top-30 header-text">
         <h1>Арт-пространство современного <br />искусства “КанArt”</h1>
         <p class="margin-top-30">
           Часы работы<br />
@@ -43,11 +55,12 @@
       </div>
     </header>
 
-    <!-- -------------секция с событиями------------ -->
-
     <section class="poster margin-top-120 container">
-      <div class="d-flex flex-sb align-i-center">
-        <h2>События в КанArt</h2>
+      <div class="d-flex flex-sb align-i-center poster__title">
+        <a href="pages/event-main-page.html">
+          <h2>События в КанArt</h2>
+        </a>
+
         <a href="pages/event-main-page.html" class="text-link">
           <p>Смотреть все события</p>
           <img src="images/right-arrow.svg" alt="" />
@@ -62,63 +75,82 @@
       <div class="poster__events margin-top-30">
         <a href="pages/event-1.html" class="event">
           <img src="images/ev-1-prev.jpg" alt="" />
-          <h3 class="event__name">Алиша Эггерт «Ты (на) остров(е)»</h3>
-          <p class="event__type">Выставка</p>
-          <p class="event__date">12 февраля - 12 марта</p>
+          <div class="event-text">
+            <h3 class="event__name">Алиша Эггерт «Ты (на) остров(е)»</h3>
+            <p class="event__type">Выставка</p>
+            <p class="event__date">12 февраля - 12 марта</p>
+          </div>
         </a>
         <a href="pages/event-2.html" class="event">
           <img src="images/ev-2-prev.jpg" alt="" />
-          <h3 class="event__name">Мастер-класс для детей с Асей Заславской</h3>
-          <p class="event__type">Мастер-класс</p>
-          <p class="event__date">18 февраля</p>
+          <div class="event-text">
+            <h3 class="event__name">
+              Мастер-класс для детей с Асей Заславской
+            </h3>
+            <p class="event__type">Мастер-класс</p>
+            <p class="event__date">18 февраля</p>
+          </div>
         </a>
 
         <a href="pages/event-3.html" class="event">
           <img src="images/ev-3-prev.jpg" alt="" />
-          <h3 class="event__name">Выставка работ Алексея Яковлева</h3>
-          <p class="event__type">Выставка</p>
-          <p class="event__date">12 февраля - 12 марта</p>
+          <div class="event-text">
+            <h3 class="event__name">Выставка работ Алексея Яковлева</h3>
+            <p class="event__type">Выставка</p>
+            <p class="event__date">12 февраля - 12 марта</p>
+          </div>
         </a>
         <a href="pages/event-4.html" class="event">
           <img src="images/ev-4-prev.jpg" alt="" />
-          <h3 class="event__name">Выставка “Отвергнутые шедевры”</h3>
-          <p class="event__type">Выставка</p>
-          <p class="event__date">12 февраля - 12 марта</p>
+          <div class="event-text">
+            <h3 class="event__name">Выставка “Отвергнутые шедевры”</h3>
+            <p class="event__type">Выставка</p>
+            <p class="event__date">12 февраля - 12 марта</p>
+          </div>
         </a>
         <a href="pages/event-5.html" class="event">
           <img src="images/ev-5-prev.jpg" alt="" />
-          <h3 class="event__name">Выставка В.В. Богаткина. Акварель.</h3>
-          <p class="event__type">Выставка</p>
-          <p class="event__date">12 февраля - 12 марта</p>
+          <div class="event-text">
+            <h3 class="event__name">Выставка В.В. Богаткина. Акварель.</h3>
+            <p class="event__type">Выставка</p>
+            <p class="event__date">12 февраля - 12 марта</p>
+          </div>
         </a>
         <a href="pages/event-6.html" class="event">
           <img src="images/ev-6-prev.jpg" alt="" />
-          <h3 class="event__name">
-            Экскурсия -головоломка о Петре-I от Данилы Петрова.
-          </h3>
-          <p class="event__type">Лекция</p>
-          <p class="event__date">12 марта</p>
+          <div class="event-text">
+            <h3 class="event__name">
+              Экскурсия -головоломка о Петре-I от Данилы Петрова.
+            </h3>
+            <p class="event__type">Лекция</p>
+            <p class="event__date">12 марта</p>
+          </div>
         </a>
         <a href="pages/event-7.html" class="event">
           <img src="images/ev-7-prev.jpg" alt="" />
-          <h3 class="event__name">Путешествие в виртуальные галереи</h3>
-          <p class="event__type">Выставка</p>
-          <p class="event__date">12 февраля - 12 марта</p>
+          <div class="event-text">
+            <h3 class="event__name">Путешествие в виртуальные галереи</h3>
+            <p class="event__type">Выставка</p>
+            <p class="event__date">12 февраля - 12 марта</p>
+          </div>
         </a>
         <a href="pages/event-8.html" class="event">
           <img src="images/ev-8-prev.jpg" alt="" />
-          <h3 class="event__name">Александр Савинов. Миражи</h3>
-          <p class="event__type">Выставка</p>
-          <p class="event__date">12 февраля - 12 марта</p>
+          <div class="event-text">
+            <h3 class="event__name">Александр Савинов. Миражи</h3>
+            <p class="event__type">Выставка</p>
+            <p class="event__date">12 февраля - 12 марта</p>
+          </div>
         </a>
       </div>
     </section>
 
-    <!-- секция о нас -->
     <section class="about container margin-top-120">
       <img class="about__img" src="images/about-img.jpg" alt="" />
       <div class="about__text">
-        <h2>О центре</h2>
+        <a href="pages/about-us.html">
+          <h2>О центре</h2>
+        </a>
         <p class="margin-top-30">
           <span class="tab">
             Центр современного искусства КанArt располагается на территории
@@ -140,10 +172,11 @@
       </div>
     </section>
 
-    <!-- секция с помещениями для аренды -->
     <section class="rents container margin-top-120">
-      <div class="d-flex flex-sb align-i-center">
-        <h2>Аренда помещений</h2>
+      <div class="d-flex flex-sb align-i-center rents__title">
+        <a href="pages/rent-main-page.html">
+          <h2>Аренда помещений</h2>
+        </a>
         <a href="pages/rent-main-page.html" class="text-link">
           <p>Смотреть все помещения</p>
           <img src="images/right-arrow.svg" alt="" />
@@ -175,7 +208,6 @@
     </section>
 
     <footer class="footer footer--with-form">
-      <!-- форма для подписки на рассылку событий -->
       <div class="container">
         <form action="" method="post" class="mailing footer__mailing">
           <input
@@ -188,10 +220,8 @@
       </div>
 
       <div class="container footer__wrap margin-top-120">
-        <!-- текст в футере -->
-
         <div class="footer__text">
-          <div class="d-flex flex-column flex-sb">
+          <div class="d-flex flex-column flex-sb footer__text-shedule">
             <p class="fw-600">
               Центр современного искусства КанArt открыт для посещения ежедневно
             </p>
@@ -202,15 +232,25 @@
             <p>© Оформление сайта. ООО «Рога и копыта», 2002</p>
           </div>
 
-          <div class="d-flex flex-column flex-sb">
+          <div class="d-flex flex-column flex-sb footer__text-contacts">
             <p>г. Нижний Новгород, ул. Академика Сахарова 40/1</p>
-            <p>
-              Администрация: +7 (959) 756 32 23 <br />
-              Аренда: +7 (959) 913 56 74 <br />
-              Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)
-            </p>
+            <ul>
+              <li>
+                <a href="tel:+79597563223"
+                  >Администрация: +7 (959) 756 32 23
+                </a>
+              </li>
+              <li>
+                <a href="tel:+79599135674">Аренда: +7 (959) 913 56 74 </a>
+              </li>
+              <li>
+                <a href="tel:+79888751256"
+                  >Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)</a
+                >
+              </li>
+            </ul>
             <div class="d-flex flex-sb">
-              <p>kanart@art.ru</p>
+              <a href="mailto:kanart@art.ru">kanart@art.ru</a>
               <div class="icons-block">
                 <a href="" class="icon"
                   ><img src="images/icon-find.svg" alt=""
