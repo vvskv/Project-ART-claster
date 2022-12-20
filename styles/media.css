@@ -18,3 +18,131 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+@media screen and (max-width:480px){
+	/*goods-serveces*/
+	.offer-item_text a{
+		font-size: 10px;
+	}
+	.offers-item{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap:10px;
+
+	}
+	.offer-item_p-width{
+		max-width: 300px;
+	}
+	.offers-item_text h2{
+		font-size: 15px;
+		
+	}
+	.offers-item_text p{
+		font-size: 10px;
+	}
+	.link-and-h1 h1{
+		font-size: 30px;
+		max-width: 300px;
+	}
+	.text-link{
+		max-width: 180px;
+		font-size: 5px;
+	}
+	/*events*/
+	.event-page__title{
+		font-size: 30px;
+		max-width: 300px;
+	}
+	.event-page__img{
+		max-width: 400px;
+		max-height: 400px;
+	}
+	
+	.event-page__main-info p{
+		font-size: 12px;
+	}
+	
+	.main-button--big{
+		max-width: 250px;
+		max-height: 40px;
+		font-size: 11px;
+		font-weight: 500;
+	}
+	.event-page__main-info{
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		padding: 10px 30px;
+		max-width: 340px;
+		font-size: 15px;
+	}
+	.event-page__text{
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		max-width: 400px;
+	}
+	.event-page__price{
+		width: 100px;
+	}
+	.event-page__date{
+		width: 200px;
+	}
+	/*about us*/
+	.about-page-info__item{
+		display: flex;
+		flex-direction: column;
+		max-width: 400px;
+	}
+	/*coctacts*/
+	.contacts-page-info__item{
+		max-width: 400px;
+	}
+	/*event main page*/
+	.filter-events{
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 400px;
+		font-size: 12px;
+
+	}
+	.events-page-content{
+		display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 20px;
+	
+	}
+	.rent-page-content{
+		display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    column-gap: 5px;
+	
+	}
+	.rent_picture{
+		max-width: 200px;
+	}
+	.rent-page-content__item-text{
+		max-width: 200px;
+		display: flex;
+    flex-direction: column;
+    gap: 10px;
+	}
+	.rent-page-content__item{
+		column-gap: 10px;
+	}
+	.room-pages-content{
+		display: grid;
+    grid-template-columns: repeat(1, 590px);
+    column-gap: 30px;
+	
+	}
+	.room-pages-content__text {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 450px;
+	}
+	.rent-picture{
+		width: 80%;
+	}
+}
