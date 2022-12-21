@@ -298,6 +298,79 @@
   a {
     font-size: 14px;
   }
+
+  .event-page {
+    gap: 15px;
+  }
+  .event-page__img {
+    height: 100%;
+    width: 100%;
+  }
+  .event-page__main-info p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .event-page__main-info p:nth-child(3) {
+    font-weight: 700;
+  }
+  .event-page__main-info {
+    display: grid;
+    grid-template-areas: 
+      "A B"
+      "C C"
+      "D D";
+    padding: 5px;
+    row-gap: 10px;
+    justify-items: center;
+    justify-content: stretch;
+  }
+  .event-page__main-info p:nth-child(1) {
+    grid-area: A;
+  }
+  .event-page__date {
+    grid-area: B;
+  }
+  .event-page__price {
+    grid-area: C;
+  }
+  .event-page__main-info .main-button {
+    grid-area: D;
+    width: 100%;
+    font-size: 14px;
+  }
+  .event-page__text {
+    display: block;
+  }
+  .form-set {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5% 10%;
+  }
+  .form-set__wrap {
+    gap: 20px;
+  }
+  .modal__wrap {
+    margin: 5px;
+    left: 0;
+  }
+  .room-pages-content {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  .room-pages-content img {
+    width: 100%;
+  }
+  .room-pages-content__text {
+    gap: 10px;
+  }
+  .room-pages-content__text .main-button {
+    width: 100%;
+    font-size: 16px;
+  }
+  .modal-rent h1 {
+    margin: 0px;
+  }
+
    /*goods and services*/
    .offers-page-content {
     gap: 20px;
@@ -328,14 +401,10 @@
   .offers-page-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5px;
-   
-   
+    gap: 5px;   
   }
   .page-404__title{
-   font-size: 30px;
-   
-    
+   font-size: 30px;    
   }
   .page-404__text{
     font-size: 16px;
@@ -370,6 +439,9 @@
   .rent-page-content__item-text li,
   .rent-page-content__item-text p {
     font-size: 13px;
+  }
+  .form-set {
+    padding: 5% 5%;
   }
   
 }
