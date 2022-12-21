@@ -817,7 +817,6 @@ a:focus {
 .contacts-page-info {
   display: grid;
   grid-template-columns: 590px 590px;
-  /* grid-template-columns: repeat(2, 1fr); */
 }
 .contacts-page-info h2 {
   font-family: "Open Sans";
@@ -830,7 +829,7 @@ a {
   font-size: 20px;
   line-height: 200%;
 }
-.contacts-page-info a {
+.contacts-page-info__item a {
   text-decoration: underline;
 }
 .contacts-page-info__item {

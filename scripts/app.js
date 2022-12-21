@@ -1,12 +1,12 @@
-const hamburger = document.querySelector('.hamburger');
-hamburger.addEventListener('click' , ()=> {
-  hamburger.classList.toggle('is-active');
-})
+const hamburger = $(".hamburger");
+hamburger.click( ()=> {
+  hamburger.toggleClass('is-active');
+});
 
-const bigLogo = document.querySelector('.big-logo');
-const formPlaceholder = document.querySelector('.mailing__form');
-if (getComputedStyle(bigLogo).display === 'none') {
-  formPlaceholder.placeholder = 'Введите ваш e-mail';
+
+const mailingForm = $('.mailing__form');
+if($(document).width() <= 480) {
+  mailingForm.attr('placeholder', 'Введите ваш e-mail');
 }
 
 // Кнопка "Показать еще" на странице событий
