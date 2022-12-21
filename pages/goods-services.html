@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/hamburgers.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/media.css" />
     <title>Document</title>
@@ -14,9 +15,18 @@
     <header class="small-header">
       <div class="container d-flex flex-sb align-i-center">
         <a href="../index.html">
-          <img src="../images/logo.svg" alt="" />
+          <img src="../images/logo.svg" class="big-logo" alt="" />
+          <img src="../images/logo-small.svg" class="small-logo" alt="" />
         </a>
         <!-- Маленькое меню -->
+        <button
+          class="hamburger hamburger--squeeze header__toggle"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <nav class="header-menu">
           <ul class="small-menu d-flex flex-sb fw-600">
             <li><a href="about-us.html">О нас</a></li>
@@ -48,8 +58,8 @@
           <img src="../images/offer1.png" />
           <div class="offers-item__text">
             <h2>Art de Vivre</h2>
-            <p>
-              Ковры для дизайнерских проектов. В шоуруме представлены следующие
+            <p >
+              Ковры для дизайнерских проектов.<br> В шоуруме представлены<br> следующие
               бренды: <br />
               Art de Vivre <br />
               PIERRE CARDIN <br />
@@ -66,10 +76,10 @@
           <img src="../images/offer2.png" />
           <div class="offers-item__text">
             <h2>ADWORM</h2>
-            <p>
-              Компания основана в 2006 году. Специализируется на брендинге и
-              маркетинговых коммуникациях. Клиентами AdWorm в разное время были:
-              ГК “Росатом”, телеканал ТВ-3, международный автоконцерн Daimler AG
+            <p >
+              Компания основана в 2006 году.<br> Специализируется на брендинге и<br>
+              маркетинговых коммуникациях. <br>Клиентами AdWorm в разное <br>время были:
+              ГК “Росатом”, <br>телеканал ТВ-3, международный <br>автоконцерн Daimler AG
               и др.
             </p>
             <p>+7 (495) 988 20 94</p>
@@ -81,9 +91,9 @@
           <img src="../images/offer3.png" />
           <div class="offers-item__text">
             <h2>Детали конструкций</h2>
-            <p>
-              Проектирование, изготовление, монтаж сложных архитектурных форм.
-              Стекло, сталь, камень, дерево.
+            <p >
+              Проектирование, изготовление,<br> монтаж сложных архитектурных<br> форм.
+              Стекло, сталь, камень, <br>дерево.
             </p>
             <p>+7 (902) 381 14 97</p>
             <a href="">dk34.ru</a>
@@ -94,9 +104,9 @@
           <img src="../images/offer4.png" />
           <div class="offers-item__text">
             <h2>ААБА-Архитектура</h2>
-            <p>
-              Проекты с запоминающейся внешностью и удобной планировкой. Ясный
-              дизайн с мощным "ВАУ!" фактором. Британское качество и стандарт
+            <p >
+              Проекты с запоминающейся <br>внешностью и удобной <br>планировкой. Ясный
+              дизайн с<br> мощным "ВАУ!" фактором. <br>Британское качество и стандарт<br>
               проектирования.
             </p>
             <p>+7 (925) 507 86 90</p>
@@ -108,9 +118,9 @@
           <img src="../images/offer5.png" />
           <div class="offers-item__text">
             <h2>French K-Bar</h2>
-            <p>
-              Бар, Кафе-бистро «Френч К-Бар» - уютно, вкусно, быстро.Наше меню
-              предложит Вам разнообразную кухню. От сендвичей и блюд на WOK, до
+            <p >
+              Бар, Кафе-бистро «Френч К-Бар» - <br>уютно, вкусно, быстро.Наше меню<br>
+              предложит Вам разнообразную<br> кухню. От сендвичей и блюд на <br>WOK, до
               стейков на гриле.
             </p>
             <p>+7 (901)451 95 56</p>
@@ -123,9 +133,9 @@
           <div class="offers-item__text">
             <h2>Lancheria</h2>
             <p>
-              Это стильное городское кафе-кулинария, объединившее в себе
-              средиземноморскую кухню авторских блюд, домашнюю атмосферу,
-              быстроту обслуживания и изысканность столичного ресторана.
+              Это стильное городское кафе-<br>кулинария, объединившее в себе<br>
+              средиземноморскую кухню <br>авторских блюд, домашнюю<br> атмосферу,
+              быстроту <br>обслуживания и изысканность<br> столичного ресторана.
             </p>
             <p>+7 (965) 351 96 75</p>
           </div>
@@ -136,8 +146,8 @@
           <div class="offers-item__text">
             <h2>SCHMIDT.Kithens and Interiors</h2>
             <p>
-              Производство кухонной мебели, прихожих, гостиных, шкафов-купе,
-              библиотек, гардеробных и мебели для ванных комнат.
+              Производство кухонной мебели,<br> прихожих, гостиных, шкафов-купе,<br>
+              библиотек, гардеробных и мебели<br> для ванных комнат.
             </p>
             <p>+7 (985) 360 97 09</p>
             <a href="">SCHMIDT.ru</a>
@@ -148,10 +158,8 @@
 
     <footer class="footer footer--small margin-top-90">
       <div class="container margin-top-30">
-        <!-- текст в футере -->
-
         <div class="footer__text">
-          <div class="d-flex flex-column flex-sb">
+          <div class="d-flex flex-column flex-sb footer__text-shedule">
             <p class="fw-600">
               Центр современного искусства КанArt открыт для посещения ежедневно
             </p>
@@ -162,15 +170,25 @@
             <p>© Оформление сайта. ООО «Рога и копыта», 2002</p>
           </div>
 
-          <div class="d-flex flex-column flex-sb">
+          <div class="d-flex flex-column flex-sb footer__text-contacts">
             <p>г. Нижний Новгород, ул. Академика Сахарова 40/1</p>
-            <p>
-              Администрация: +7 (959) 756 32 23 <br />
-              Аренда: +7 (959) 913 56 74 <br />
-              Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)
-            </p>
+            <ul>
+              <li>
+                <a href="tel:+79597563223"
+                  >Администрация: +7 (959) 756 32 23
+                </a>
+              </li>
+              <li>
+                <a href="tel:+79599135674">Аренда: +7 (959) 913 56 74 </a>
+              </li>
+              <li>
+                <a href="tel:+79888751256"
+                  >Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)</a
+                >
+              </li>
+            </ul>
             <div class="d-flex flex-sb">
-              <p>kanart@art.ru</p>
+              <a href="mailto:kanart@art.ru">kanart@art.ru</a>
               <div class="icons-block">
                 <a href="" class="icon"
                   ><img src="../images/icon-find.svg" alt=""
@@ -197,7 +215,6 @@
         />
       </div>
     </footer>
-
     <script src="../scripts/jquery-3.6.1.js"></script>
     <script src="../scripts/app.js"></script>
   </body>
