@@ -12,23 +12,31 @@
 </head>
 <body>
     <header class="small-header">
-        <div class="container d-flex flex-sb align-i-center">
-          <a href="../index.html">
-            <img src="../images/logo.svg" alt="" />
-          </a>
-          <!-- основное меню -->
-          <nav class="header-menu">
-            <ul class="d-flex flex-sb fw-600">
-              <li><a href="about-us.html">О нас</a></li>
-              <li><a href="event-main-page.html">События</a></li>
-              <li><a href="rent-main-page.html">Арендаторам</a></li>
-              <li><a href="goods-services.html">Товары и услуги</a></li>
-              <li><a href="info-for-visitors.html">Посетителям</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <div class="container d-flex flex-sb align-i-center">
+        <a href="../index.html">
+          <img src="../images/logo.svg" class="big-logo" alt="" />
+          <img src="../images/logo-small.svg" class="small-logo" alt="" />
+        </a>
+        <button
+          class="hamburger hamburger--squeeze header__toggle"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="header-menu">
+          <ul class="d-flex flex-sb fw-600">
+            <li><a href="about-us.html">О нас</a></li>
+            <li><a href="event-main-page.html">События</a></li>
+            <li><a href="rent-main-page.html">Арендаторам</a></li>
+            <li><a href="goods-services.html">Товары и услуги</a></li>
+            <li><a href="info-for-visitors.html">Посетителям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   
       <section class="container event-page margin-top-90">
         <div class="link-and-h1">
@@ -47,7 +55,7 @@
   
         
   
-        <img class="event-page__img" src="../images/ev-13-prev.jpg" alt="" />
+        <img class="event-page__img" src="../images/ev-13-poster.jpg" alt="" />
   
         <div class="event-page__main-info">
           <p>Выставка</p>
@@ -86,56 +94,64 @@
     </div>
   
       <footer class="footer footer--small margin-top-90">
-        <div class="container margin-top-30">
-          <!-- текст в футере -->
-  
-          <div class="footer__text">
-            <div class="d-flex flex-column flex-sb">
-              <p class="fw-600">
-                Центр современного искусства КанArt открыт для посещения ежедневно
-              </p>
-              <p>
-                понедельник - четверг 9.00 - 22.00 <br />
-                пятница - воскресенье 9.00 - 23.00
-              </p>
-              <p>© Оформление сайта. ООО «Рога и копыта», 2002</p>
-            </div>
-  
-            <div class="d-flex flex-column flex-sb">
-              <p>г. Нижний Новгород, ул. Академика Сахарова 40/1</p>
-              <p>
-                Администрация: +7 (959) 756 32 23 <br />
-                Аренда: +7 (959) 913 56 74 <br />
-                Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)
-              </p>
-              <div class="d-flex flex-sb">
-                <p>kanart@art.ru</p>
-                <div class="icons-block">
-                  <a href="" class="icon"
-                    ><img src="../images/icon-find.svg" alt=""
-                  /></a>
-                  <a href="" class="icon"
-                    ><img src="../images/icon-tele.svg" alt=""
-                  /></a>
-                  <a href="" class="icon"
-                    ><img src="../images/icon-ytube.svg" alt=""
-                  /></a>
-                  <a href="" class="icon"
-                    ><img src="../images/icon-vk.svg" alt=""
-                  /></a>
-                </div>
+      <div class="container margin-top-30">
+        <div class="footer__text">
+          <div class="d-flex flex-column flex-sb footer__text-shedule">
+            <p class="fw-600">
+              Центр современного искусства КанArt открыт для посещения ежедневно
+            </p>
+            <p>
+              понедельник - четверг 9.00 - 22.00 <br />
+              пятница - воскресенье 9.00 - 23.00
+            </p>
+            <p>© Оформление сайта. ООО «Рога и копыта», 2002</p>
+          </div>
+
+          <div class="d-flex flex-column flex-sb footer__text-contacts">
+            <p>г. Нижний Новгород, ул. Академика Сахарова 40/1</p>
+            <ul>
+              <li>
+                <a href="tel:+79597563223"
+                  >Администрация: +7 (959) 756 32 23
+                </a>
+              </li>
+              <li>
+                <a href="tel:+79599135674">Аренда: +7 (959) 913 56 74 </a>
+              </li>
+              <li>
+                <a href="tel:+79888751256"
+                  >Кассы: +7 (988) 875 12 56 (с 9.00 до 21.00)</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex flex-sb">
+              <a href="mailto:kanart@art.ru">kanart@art.ru</a>
+              <div class="icons-block">
+                <a href="" class="icon"
+                  ><img src="../images/icon-find.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-tele.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-ytube.svg" alt=""
+                /></a>
+                <a href="" class="icon"
+                  ><img src="../images/icon-vk.svg" alt=""
+                /></a>
               </div>
             </div>
           </div>
-  
-          <img
-            src="../images/arrow-up.svg"
-            alt=""
-            class="icon footer__return"
-            onclick="returnOnTop()"
-          />
         </div>
-      </footer>
+
+        <img
+          src="../images/arrow-up.svg"
+          alt=""
+          class="icon footer__return"
+          onclick="returnOnTop()"
+        />
+      </div>
+    </footer>
       <script src="../scripts/jquery-3.6.1.js"></script>
       <script src="../scripts/app.js"></script>
 </body>

@@ -46,6 +46,11 @@ function returnOnTop() {
       });
 }
 
+$(document).keydown(function(e) {
+    if (e.keyCode === 8) {
+      history.back();
+    }
+});
 
 
 // Добавление формы покупки билетов, заполнение формы информацией со страницы
