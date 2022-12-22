@@ -14,6 +14,10 @@
   .rent-page-content {
     grid-template-columns: 1fr;
   }
+  .rents__catalog,
+  .poster__events {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -89,7 +93,65 @@
   .for-visitors-page-content__item {
     grid-template-columns: 1fr;
   }
+  .rents__catalog,
+  .poster__events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rents__text,
+  .poster__text {
+    width: 90%;
+  }
+  .about {
+    height: auto;
+  }
+  .about__text {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: auto;
+  }
+  .footer__text {
+    grid-column-gap: 5%;
+    width: 99%;
+    margin: auto;
+  }
+  .offers-page-content {
+    grid-template-columns: 1fr;
+  }
+  .header__toggle.is-active + .header-menu {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    width: auto;
+    margin: 0;
+    right: 15px;
+    top: 60px;
+    border-radius: 3px;
+  }
 }
+
+@media screen and (max-width: 770px) {
+  .text-link {
+    display: none;
+  }
+  .footer__text-shedule {
+    display: none;
+  }
+  .footer__text {
+    grid-template-columns: 1fr;
+  }
+  .footer__text a {
+    font-weight: 600;
+  }
+  .icons-block {
+    width: 50%;
+  }
+  .icons-block img {
+    width: calc(5vw);
+  }
+
+}
+
 
 @media screen and (max-width: 480px) {
   p {
@@ -372,16 +434,6 @@
   }
 
    /*goods and services*/
-   .offers-page-content {
-    gap: 20px;
-  }
-  .offers-item {
-    border: 3px solid rgba(204, 204, 153, 0.5);
-    padding: 5px;
-    column-gap: 15px;
-    max-width: 330px;
-  }
- 
   .offers-item img {
     width: 100%;
     height: 100%;
@@ -398,11 +450,6 @@
   .offers-item__text {
     gap: 10px;
   }
-  .offers-page-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;   
-  }
   .page-404__title{
    font-size: 30px;    
   }
@@ -413,7 +460,42 @@
     font-size: 13px;
   }
 
+  .offers-item {
+    border: 2px solid rgba(204, 204, 153, 0.5);
+    padding: 5px;
+    column-gap: 15px;
+    box-sizing: border-box;
+  }
+  .offers-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;   
+  }
+   .rent-page-content__item a {
+    position: relative;
+  }
+  .rent-page-content__item a:after {
+    position:absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    right:-100%;
+  }
+
 }
+
+@media screen and (max-width: 400px) {
+  .offers-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+  }
+  .offers-item img {
+    height: 120px;
+  }
+}
+
 
 @media screen and (max-width: 330px) {
   h1 {
