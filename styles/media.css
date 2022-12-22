@@ -12,7 +12,7 @@
     font-size: 16px;
   }
   .rent-page-content {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
   .rents__catalog,
   .poster__events {
@@ -127,6 +127,9 @@
     right: 15px;
     top: 60px;
     border-radius: 3px;
+  }
+  .rent-page-content {
+    grid-template-columns: 1fr;
   }
 }
 
