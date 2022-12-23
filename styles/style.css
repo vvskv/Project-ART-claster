@@ -887,10 +887,10 @@ a {
   gap: 30px;
 }
 .offers-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .offers-item__text {
   display: flex;
   flex-direction: column;

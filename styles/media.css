@@ -152,9 +152,7 @@
   .icons-block img {
     width: calc(5vw);
   }
-
 }
-
 
 @media screen and (max-width: 480px) {
   p {
@@ -380,7 +378,7 @@
   }
   .event-page__main-info {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "A B"
       "C C"
       "D D";
@@ -436,30 +434,29 @@
     margin: 0px;
   }
 
-   /*goods and services*/
+  /*goods and services*/
   .offers-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
   }
   .offers-item__text h2 {
     font-size: 16px;
   }
-  
+
   .offers-item__text p {
     font-size: 14px;
   }
   .offers-item__text {
     gap: 10px;
   }
-  .page-404__title{
-   font-size: 30px;    
+  .page-404__title {
+    font-size: 30px;
   }
-  .page-404__text{
+  .page-404__text {
     font-size: 16px;
   }
-  .page-404__links{
+  .page-404__links {
     font-size: 13px;
   }
 
@@ -472,19 +469,18 @@
   .offers-page-content {
     display: flex;
     flex-direction: column;
-    gap: 15px;   
+    gap: 15px;
   }
-   .rent-page-content__item a {
+  .rent-page-content__item a {
     position: relative;
   }
   .rent-page-content__item a:after {
-    position:absolute;
-    content:'';
+    position: absolute;
+    content: "";
     width: 100%;
     height: 100%;
-    right:-100%;
+    right: -100%;
   }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -498,7 +494,6 @@
     height: 120px;
   }
 }
-
 
 @media screen and (max-width: 330px) {
   h1 {
@@ -528,5 +523,4 @@
   .form-set {
     padding: 5% 5%;
   }
-  
 }
