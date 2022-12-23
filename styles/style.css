@@ -941,7 +941,7 @@ a {
 
 .room-pages-content {
   display: grid;
-  grid-template-columns: repeat(2, 590px);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
 }
 .room-pages-content__text {
@@ -955,6 +955,11 @@ a {
 }
 .room-pages-content__text > .main-button {
   margin-top: 15px;
+}
+.room-pages-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Страница 404 */
